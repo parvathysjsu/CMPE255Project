@@ -1,5 +1,12 @@
 # CMPE255 Project - Wildfire Prediction / Wildfire Analysis
 
+## Team Members
+1. Mohmmadsalman Mal Github Id:
+2. Parvathy Kannankumarath Madom Krishnan Github Id: parvathysjsu
+3. Sanjana Srinivas Github Id:
+4. Sung-Yin Yang Github Id:
+
+## 
 In this project, we investigate the following:
 
 1. The trend of wildfires - Have they increased or decreased over the years. 

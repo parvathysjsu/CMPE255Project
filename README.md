@@ -3,8 +3,8 @@
 ## Team Members
 1. Mohmmadsalman Mal :[salmanmal](https://github.com/salmanmal)
 2. Parvathy Kannankumarath Madom Krishnan :[parvathysjsu](https://github.com/parvathysjsu)
-3. Sanjana Srinivas Github Id: Sanjana7395 :[Sanjana7395](https://github.com/Sanjana7395)
-4. Sung-Yin Yang Github Id: SungYinYang :[SungYinYang](https://github.com/SungYinYang)
+3. Sanjana Srinivas :[Sanjana7395](https://github.com/Sanjana7395)
+4. Sung-Yin Yang :[SungYinYang](https://github.com/SungYinYang)
 
 ## 
 In this project, we investigate the following:

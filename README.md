@@ -9,20 +9,24 @@
 ## Dataset and Source
 1. Dataset from Washington Geospatial open Data Portal.  
 Source : https://geo.wa.gov/datasets/6f31b076628d4f8ca5a964cbefd2cccc_0/data?geometry=-140.484%2C41.510%2C-99.131%2C52.000    
-2. Tweets on wildfire.  
-Source : https://developer.twitter.com/en 
-3. Drought data.
+2. Drought data.
 Source : https://droughtmonitor.unl.edu/
+3. Temperature dataset
+Source : 
 
 ## Introduction
 The year 2020 wreaked havoc in many states of the USA. Thus through this project, we analyze 
-how the changes in climate is boosting the wildfires.The objective is to investigate following in Washington State - 
+how the changes in climate is boosting the wildfires.The objective is to investigate following 
+in Washington State - 
 1. The trend of wildfires - Have they increased or decreased over the years. 
 2. Main causes of the fire.
-3. Overlaying the weather dataset with drought dataset in the region to identify the impact of drought in causing wildfires. We extract information about the intensity of the drought just before the wildfire to analyse the area that is being affected.  
-4. Predict the area that will be affected given some useful variables as input (Regression problem)  
-   
-Predicting the area that could be affected by wildfire can help in preparing for the impending adversities.
+3. Overlaying the temperature dataset in the region to predict if there is a wildfire or
+not given the temperature, humidity and precipitation of the region.
+4. Overlaying the drought dataset in the region to identify the impact of 
+drought in causing wildfires. We extract information about the intensity of the drought just 
+before the wildfire to analyse the area that is being affected. Predict the area that will be 
+affected given some useful variables as input (Regression problem). This could help in 
+preparing for the impending adversities.
 
 ## Method
 ### A. Preprocessing
@@ -30,11 +34,8 @@ Washington Geospatial open Data Portal
 1. Eliminate columns that does not contribute to analyzing the data.
 2. Identify patterns, view distribution, fix outliers and missing values.
 
-Twitter data
-1. Scrape the tweets related to wildfire and the duration of wildfires.
-2. Extract relevant information from the tweets like region where the fire occurred, 
-the year it happened, duration of the fire.
-3. Analyze the duration of fire over the years.
+Temperature data
+1. 
 
 Drought data
 1. Identify patterns, view distribution, fix outliers and missing values.
@@ -47,9 +48,13 @@ Following models are proposed to achieve the objective -
 
 Multiple Linear Regression      
 This model helps in predicting a line that describes how the mean response changes with 
-the input variables.
+the input variables. By its nature, linear regression looks for only linear relationships
+between input and output variables. 
 
 Decision Tree regression
+Decision tree uses tree-like model to decide on predicting possible outcomes. Missing values
+in the data is handled well. However, the training time is higher and is more prone to
+over-fitting.
 
 
 ## Expected Outcome

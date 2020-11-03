@@ -7,31 +7,58 @@
 4. Sung-Yin Yang :[SungYinYang](https://github.com/SungYinYang)
 
 ## Dataset and Source
-1. Dataset from Washington Geospatial open Data Portal.   
+1. Dataset from Washington Geospatial open Data Portal.  
 Source : https://geo.wa.gov/datasets/6f31b076628d4f8ca5a964cbefd2cccc_0/data?geometry=-140.484%2C41.510%2C-99.131%2C52.000    
 2. Tweets on wildfire.  
-Source : https://developer.twitter.com/en   
- 
-## Description of the problem we will solve and the question we’ll investigate.
+Source : https://developer.twitter.com/en 
+3. Drought data.
+Source : https://droughtmonitor.unl.edu/
+
+## Introduction
+The year 2020 wreaked havoc in many states of the USA. Thus through this project, we analyze 
+the wildfire dataset to extract useful information. The objective is to investigate the 
+following in Washington State - 
 1. The trend of wildfires - Have they increased or decreased over the years. 
 2. Main causes of the fire.
-3. Geospatial visualization of the data.
-4. Predict the area that will be affected given the region and year as input (Regression problem)
+3. Overlaying the weather dataset with drought dataset in the region to identify the impact 
+of drought in causing wildfires. 
+4. Predict the area that will be affected given some useful variables as input (Regression problem)  
+   
+Predicting the area that could be affected by wildfire can help in preparing for the impending adversities.
 
-## Potential methods we will consider to apply On
-### Washington Geospatial open Data Portal
-1. Data Preparation - Removing anomalous values from the dataset, Eliminate columns whose values occur an abnormally large number of times as it does not contribute to analysing the data.
-2. Extract number of wildfires that occur in each year to analyse the trend over time.
-3. Identify maximum occurrence of the value(s) of cause column to uncover the major cause of fire in Washington region.
-4. With the geojson file from the dataset, visualize the areas where the wildfires have occurred.
-5. Using models like linear/polynomial regression or decision tree models to predict the area affected.
+## Method
+### A. Preprocessing
+Washington Geospatial open Data Portal      
+1. Eliminate columns that does not contribute to analyzing the data.
+2. Identify patterns, view distribution, fix outliers and missing values.
 
-### Twitter data
+Twitter data
 1. Scrape the tweets related to wildfire and the duration of wildfires.
-2. Data Preparation  - Extract relevant information from the tweets like region where the fire occurred, the year it happened, duration of the fire.
+2. Extract relevant information from the tweets like region where the fire occurred, 
+the year it happened, duration of the fire.
 3. Analyze the duration of fire over the years.
 
-## How will you measure success?
-1. The analyzed output should match with the previously studied results.
-2. Accurate visualization of the data.
-3. Mean Square Error and accuracy.
+Drought data
+1. Identify patterns, view distribution, fix outliers and missing values.
+2. Extract duration and intensity of draught. Overlay accordingly with wildfire dataset.
+
+### B. Method
+We propose to predict the area affected by wildfire given input variables like - year,
+fire start-date, region of fire, cause of fire, recently occurred draught intensity.
+Following models are proposed to achieve the objective - 
+
+Multiple Linear Regression
+This model helps in predicting a line that describes how the mean response changes with 
+the input variables.
+
+Decision Tree regression
+
+
+## Expected Outcome
+### A. Visualization
+1. The increasing/decreasing trend of wildfires.
+2. Major causes for wildfire in Washington region.
+
+### B. Prediction result
+1. Expected to achieve minimal root mean square error or an 
+higher R-squared value on the test data.

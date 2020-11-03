@@ -139,6 +139,7 @@ dmypy.json
 cython_debug/
 
 # Data files
-*.csv
 wa_lrg_fires/
 *.ipynb
+Pipfile.lock
+

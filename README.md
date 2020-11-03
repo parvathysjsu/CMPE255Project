@@ -47,7 +47,7 @@ We propose to predict the area affected by wildfire given input variables like -
 fire start-date, region of fire, cause of fire, recently occurred draught intensity.
 Following models are proposed to achieve the objective - 
 
-Multiple Linear Regression
+Multiple Linear Regression      
 This model helps in predicting a line that describes how the mean response changes with 
 the input variables.
 

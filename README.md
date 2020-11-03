@@ -16,7 +16,7 @@ Source : https://droughtmonitor.unl.edu/
 
 ## Introduction
 The year 2020 wreaked havoc in many states of the USA. Thus through this project, we analyze 
-how the changes in climate is boosting the wildfires.The objective is to investigate following in Washington State - 
+how the changes in climate is worsening the wildfires. The objective is to investigate the following in the state of Washington:
 1. The trend of wildfires - Have they increased or decreased over the years. 
 2. Main causes of the fire.
 3. Overlaying the weather dataset with drought dataset in the region to identify the impact of drought in causing wildfires. We extract information about the intensity of the drought just before the wildfire to analyse the area that is being affected.  

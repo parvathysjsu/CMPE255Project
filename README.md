@@ -16,12 +16,10 @@ Source : https://droughtmonitor.unl.edu/
 
 ## Introduction
 The year 2020 wreaked havoc in many states of the USA. Thus through this project, we analyze 
-the wildfire dataset to extract useful information. The objective is to investigate the 
-following in Washington State - 
+how the changes in climate is boosting the wildfires.The objective is to investigate following in Washington State - 
 1. The trend of wildfires - Have they increased or decreased over the years. 
 2. Main causes of the fire.
-3. Overlaying the weather dataset with drought dataset in the region to identify the impact 
-of drought in causing wildfires. 
+3. Overlaying the weather dataset with drought dataset in the region to identify the impact of drought in causing wildfires. We extract information about the intensity of the drought just before the wildfire to analyse the area that is being affected.  
 4. Predict the area that will be affected given some useful variables as input (Regression problem)  
    
 Predicting the area that could be affected by wildfire can help in preparing for the impending adversities.

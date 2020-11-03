@@ -11,7 +11,7 @@
 Source : https://geo.wa.gov/datasets/6f31b076628d4f8ca5a964cbefd2cccc_0/data?geometry=-140.484%2C41.510%2C-99.131%2C52.000    
 2. Drought data.
 Source : https://droughtmonitor.unl.edu/
-3. Temperature dataset
+3. Temperature dataset      
 Source : 
 
 ## Introduction
@@ -34,7 +34,7 @@ Washington Geospatial open Data Portal
 1. Eliminate columns that does not contribute to analyzing the data.
 2. Identify patterns, view distribution, fix outliers and missing values.
 
-Temperature data
+Temperature data        
 1. 
 
 Drought data

@@ -9,59 +9,60 @@
 ## Dataset and Source
 1. Dataset from Washington Geospatial open Data Portal.  
 Source : https://geo.wa.gov/datasets/6f31b076628d4f8ca5a964cbefd2cccc_0/data?geometry=-140.484%2C41.510%2C-99.131%2C52.000    
-2. Drought data.        
-Source : https://droughtmonitor.unl.edu/
-3. Temperature dataset.     
-Source : 
+2. Temperature dataset.     
+Source : https://w2.weather.gov/climate/xmacis.php?wfo=sew
 
 ## Introduction
 The year 2020 wreaked havoc in many states of the USA. Thus through this project, we analyze 
-how the changes in climate is worsening the wildfires. The objective is to investigate the 
+how the climate changes are worsening the wildfires. The objective is to investigate the 
 following in the state of Washington:
 1. The trend of wildfires - Have they increased or decreased over the years. 
 2. Main causes of the fire.
-3. Overlaying the temperature dataset in the region to predict if there is a wildfire or
-not given the temperature, humidity and precipitation of the region.
-4. Overlaying the drought dataset in the region to identify the impact of 
-drought in causing wildfires. We extract information about the intensity of the drought just 
-before the wildfire to analyse the area that is being affected. Predict the area that will be 
-affected given some useful variables as input (Regression problem). This could help in 
-preparing for the impending adversities.
+3. Analyse the past wildfire occurrence to identify the regions prone to wildfire.
+4. Analyse the effect of weather on the spread of wildfire.
+5. Overlaying the temperature dataset in the region to predict the probability of the wildfire occurrence
+given the weather details of the region.
 
 ## Method
 ### A. Preprocessing
 Washington Geospatial open Data Portal      
-1. Eliminate columns that does not contribute to analyzing the data.
-2. Identify patterns, view distribution, fix outliers and missing values.
+1. Eliminate columns that do not contribute to analyzing the data.
+2. Identify patterns, view distribution, fix outliers, and missing values.
 
 Temperature data
-1. 
+1. Extract weather data for each city in Washington State through API.
+2. Eliminate unnecessary columns and clean the dataset.
 
-Drought data
-1. Identify patterns, view distribution, fix outliers and missing values.
-2. Extract duration and intensity of draught. Overlay accordingly with wildfire dataset.
+### B. Data Overlaying
+Overlay the attributes of different datasets to feed as input to the model.
 
-### B. Method
-We propose to predict the area affected by wildfire given input variables like - year,
-fire start-date, region of fire, cause of fire, recently occurred draught intensity.
-Following models are proposed to achieve the objective - 
+### B. Model
+We propose to predict the probability of the occurrence of wildfire given area and weather 
+conditions as input Following models are proposed to achieve the objective - 
 
-Multiple Linear Regression      
-This model helps in predicting a line that describes how the mean response changes with 
-the input variables. By its nature, linear regression looks for only linear relationships
-between input and output variables. 
+Logistic Regression    
+This model helps in predicting the probability of event success or failure. The major limitation of
+this method is the assumption of linearity between input and output variables. 
 
-Decision Tree regression
+Decision Tree       
 Decision tree uses tree-like model to decide on predicting possible outcomes. Missing values
-in the data is handled well. However, the training time is higher and is more prone to
+in the data are handled well. However, the training time is higher and is more prone to
 over-fitting.
+
+Convolution Neural Network      
+The CNN model will learn a function that maps the sequence of input observations to predict
+the occurrence of wildfire. The estimated predictive accuracy will be good. However, it mostly
+performs well on a large datasets.
 
 
 ## Expected Outcome
 ### A. Visualization
 1. The increasing/decreasing trend of wildfires.
-2. Major causes for wildfire in Washington region.
+2. Major causes for wildfire in th Washington region.
 
 ### B. Prediction result
-1. Expected to achieve minimal root mean square error or an 
-higher R-squared value on the test data.
+1. The wildfire dataset constituent of only the positive occurrences and not negative occurrences.
+Therefore there exists a class imbalance. This is eliminated by adding negative occurrence data.
+The outcome of the classifier is expected to predict a range of probability from 0-1(wildfire occurred
+or not)
+2. Expected to achieve good accuracy on the test data.

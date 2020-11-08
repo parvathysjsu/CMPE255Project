@@ -17,13 +17,23 @@ def convert_to_date(column):
     return column
 
 
+def combine_redundant(column):
+    column.replace(['MISCELLANEOUS', 'UNDER INVESTIGATION', 'UNDETERMINED'],
+                   ['UNKNOWN', 'UNKNOWN', 'UNKNOWN'], inplace=True)
+    column.replace(['CHILDREN', 'SMOKER'],
+                   ['HUMAN', 'HUMAN'], inplace=True)
+    column.replace('BURNIN MATERIAL',
+                   'BURNING MATERIAL', inplace=True)
+
+
 def main():
     fire_data = load_data(os.path.join(DATA_DIR, 'Washington_Large_Fires_1973-2019.csv'))
     remove_unnecessary_cols(fire_data, ['OBJECTID', 'SHAPEAREA',
                                         'SHAPELEN', 'FIRENUM',
-                                        'PERIMDATE'])
+                                        'PERIMDATE', 'YEAR'])
     fire_data['STARTDATE'] = convert_to_date(fire_data['STARTDATE'])
-    print(fire_data)
+    combine_redundant(fire_data['CAUSE'])
+    fire_data.to_csv(os.path.join(DATA_DIR, 'preprocessed/wildfire.csv'), index=False)
 
 
 if __name__ == '__main__':

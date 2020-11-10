@@ -1,0 +1,550 @@
+UNITID,AGENCY,FIRENAME,STARTDATE,ACRES,CAUSE,AREA,COUNTY
+,,Red Lake,1997-01-01,1150.89256744,,Airway Heights,Spokane County
+,,Buckeye,1987-01-01,227.33273803,,Mead,Spokane County
+,,Stony Peak,1985-01-01,289.58964622,,Deer Park,Spokane County
+,,Liberty Lake,1985-01-01,855.37990638,,Liberty Lake,Spokane County
+,,Rail Canyon,1994-01-01,102.09684049,,Deer Park,Spokane County
+,,Cork Screw,1994-01-01,185.87267505,,Fairchild Air Force Base,Spokane County
+,,Owens Rd,1994-01-01,127.00405221,,Deer Park,Spokane County
+,,Newkirk - Old Trail Rd,1997-01-01,772.41805331,,Town and Country,Spokane County
+,,Riverside,1994-01-01,455.86572888,,Town and Country,Spokane County
+,,Unknown,1991-01-01,407.72478998,,Cheney,Spokane County
+,,Unknown,1991-01-01,235.1546015,,Cheney,Spokane County
+,,Unknown,1973-01-01,499.72147763,,Spokane,Spokane County
+,,Unknown,1991-01-01,100.46829955,,Mead,Spokane County
+,,Unknown,1991-01-01,26.39785695,,Mead,Spokane County
+WASES,Washington DNR,Cleveland Fire,1998-07-27,18500.4198546,Lightning,Goldendale,Klickitat County
+WASES,Washington DNR,Major Creek Fire,1999-07-01,730.60636439,,White Salmon,Klickitat County
+WASES,Washington DNR,Easton Fire,1999-09-11,75.93893678,,Cle Elum,Kittitas County
+WASES,Washington DNR,Middle Fork Fire,,2.24146975,,White Salmon,Klickitat County
+WASES,Washington DNR,Whites Basin Fire,,122.67796985,,Tieton,Yakima County
+WAOWF,Okan-Wen NF,Bailey Fire,2001-08-13,3211.96752586,,Republic,Ferry County
+WASES,Washington DNR,Dry Creek Fire,,17.14686711,,Tieton,Yakima County
+WANES,Washington DNR,Gambles Mill Fire (Brewster,2001-08-12,5516.09471316,,Brewster,Okanogan County
+WASES,Washington DNR,Highland Flats Fire,,128.72576872,,Chelan,Chelan County
+WANES,Washington DNR,Indian Dan Fire (Brewster Complex),2001-08-12,584.61615971,Unknown,Brewster,Okanogan County
+WAOWF,Okan-Wen NF,Libby South Fire,2001-07-09,3789.27300628,,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Rex Creek Fire,2001-08-12,44581.483028,,Granite Falls,Chelan County
+WAGPF,Gifford Pinchot NF,Salt Creek Fire (Salt Creek Complex),2001-09-15,312.56507907,,White Salmon,Klickitat County
+WANES,Washington DNR,Pingston,2007-07-28,126.19826414,,Kettle Falls,Stevens County
+WACOA,Colville Agency,Abraham Canyon,2008-07-10,372.33180886,,Kettle Falls,Stevens County
+WAWFS,Washington Fire Ser,Badger Mountain Fire (Badger Mtn Complex),2008-07-10,13265.6373849,,Sunnyslope,Chelan County
+WASES,Washington DNR,Spruce Dome Complex,2001-08-16,2722.11065268,,Tieton,Yakima County
+WACOA,Colville Agency,St. Mary's Fire (Virginia Lake Complex),2001-08-12,32978.7297989,,Omak,Okanogan County
+WAOWF,Okan-Wen NF,Tommy Creek Fire,2001-09-16,647.1737304,,Granite Falls,Chelan County
+WASES,Washington DNR,Touchet Road,,258.25442315,,Dayton,Columbia County
+WASES,Washington DNR,Union Valley Fire,2001-07-27,4523.30801334,,Chelan,Chelan County
+,,Deer Mountain Fire,2002-08-16,2280.88453577,,Chelan,Chelan County
+WAOWF,Okan-Wen NF,Deer Point Fire,2002-07-15,20993.930371,,Granite Falls,Chelan County
+,,Ewe Neck Fire,,75.95030196,,Tieton,Yakima County
+WANES,Washington DNR,Black Canyon Fire,2003-08-10,2281.36471161,,Trail,
+WANES,Washington DNR,Bulldog Fire,2003-09-05,411.58409343,,Chewelah,Stevens County
+WAOWF,Okan-Wen NF,Farewell Fire (Fawn Peak Complex),2003-06-30,81233.4072148,,Oliver,
+WAOWF,Okan-Wen NF,Fawn Peak Fire (Fawn Peak Complex),2003-06-30,74.02081008,,Granite Falls,Chelan County
+WAMSF,Mt. Baker-Snoq NF,Gold Hill Fire (North Zone Complex),2003-08-07,169.78597993,,Darrington,Snohomish County
+WAOWF,Okan-Wen NF,Maple,2003-09-06,1626.25142419,,Leavenworth,Chelan County
+WACOA,Colville Agency,McGinnis Flat,2003-07-18,2255.85285529,,Coulee Dam,Okanogan County
+WAOWF,Okan-Wen NF,Needles Fire,2003-09-03,19328.2100486,,Princeton,
+WAMRP,Mount Rainier NP,Panther Fire (Mount Rainier Complex),2003-08-21,43.95596204,,Buckley,Pierce County
+WACOA,Colville Agency,Rattlesnake Canyon Fire,2003-07-05,10486.7618947,,Davenport,Lincoln County
+WAMRP,Mount Rainier NP,Redstone Fire (Mount Rainier Complex),2003-08-21,46.97740305,,Enumclaw,King County
+WAOWF,Okan-Wen NF,Square Lake Fire,2003-08-26,903.30043899,,Leavenworth,Chelan County
+WASPD,Spokane BLM,Beebe,2004-07-04,4205.59361685,,Chelan,Chelan County
+WANES,Washington DNR,Bottle Two,2004-06-21,33.38954915,Lightning,Tonasket,Okanogan County
+WAOWF,Okan-Wen NF,Deep Harbor Fire (Pot Peak / Sisi Ridge Complex),2004-06-19,29995.5118488,,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Dirty Face Peak,2004-08-16,295.32826885,,Leavenworth,Chelan County
+WACOA,Colville Agency,Elmer City,2004-07-29,1928.78592553,Children,Coulee Dam,Okanogan County
+WAOWF,Okan-Wen NF,Fischer,2004-08-08,16425.3321689,Equipment Use,Cashmere,Chelan County
+WAOWF,Okan-Wen NF,Freezeout Fire (Williams Butte Complex),2004-06-24,708.04545113,Lightning,Hope,
+WANES,Washington DNR,Bluehoo Fire (Highlands Complex),2004-08-19,10.26878669,,Oroville,Okanogan County
+WACOA,Colville Agency,Hopkins Canyon Fire (Hopkins Canyon Complex),2004-06-26,5071.74126858,Unknown,Coulee Dam,Okanogan County
+WAOWF,Okan-Wen NF,Icicle,2004-07-15,696.92252637,,Leavenworth,Chelan County
+WASES,Washington DNR,Lauderdale,2004-07-25,247.82964959,Arson,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Mebee Fire (Williams Butte Complex),2004-08-10,234.37441615,Lightning,Darrington,Snohomish County
+WANES,Washington DNR,Mill Canyon Fire (Mill Canyon Complex),2004-08-01,1090.0361395,Recreation,Davenport,Lincoln County
+WASES,Washington DNR,Mud Lake,2004-08-10,3864.29303674,,Tieton,Yakima County
+WAOWF,Okan-Wen NF,Peeve Fire (Williams Butte Complex),2004-07-30,51.23623291,,Princeton,
+WAOWF,Okan-Wen NF,Pot Peak Fire (Pot Peak / Sisi Ridge Complex),2004-06-26,15395.1402459,Lightning,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,,2004-06-26,1.77180467,,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Rattlesnake Peak,2004-07-18,662.25788056,,Tieton,Yakima County
+WAOWF,Okan-Wen NF,Reecer,2004-04-27,107.75963431,Campfire,Ellensburg,Kittitas County
+WAOWF,Okan-Wen NF,Sisi Ridge Fire (Pot Peak / Sisi Ridge Complex),2004-06-19,343.19842818,Lightning,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Williams Butte Fire (Williams Butte Complex),2004-08-16,1257.84650732,Lightning,Granite Falls,Chelan County
+WANES,Washington DNR,Burnt Bread,2005-08-06,1351.45739573,Miscellaneous,Republic,Ferry County
+WASES,Washington DNR,Dirty Face Fire,2005-07-30,1150.52522655,Miscellaneous,Leavenworth,Chelan County
+WANES,Washington DNR,Harker Canyon,2005-08-10,1557.29131817,Unknown,Davenport,Lincoln County
+WASPA,Spokane Agency,Hot Falls,2005-07-15,174.41370852,Arson,Davenport,Lincoln County
+WASES,Washington DNR,Lick Creek,2005-08-04,734.67808224,Equipment Use,Cle Elum,Kittitas County
+WANES,Washington DNR,Martin Road Fire,2005-09-28,877.57708336,Debris Burning,Kettle Falls,Stevens County
+WANES,Washington DNR,Pearrygin Lake,2005-07-03,531.28787157,Miscellaneous,Brewster,Okanogan County
+ORUMF,Umatilla NF,School Fire,2005-08-05,49684.7503657,,Pomeroy,Garfield County
+WACOA,Colville Agency,Second HUD,2005-07-06,4176.06233309,,Omak,Okanogan County
+WANCP,North Cascades NP,Shady,2005-07-19,153.16695771,Miscellaneous,Darrington,Snohomish County
+WASPD,Spokane BLM,Spud Fire,2005-06-28,123.42634856,,Davenport,Lincoln County
+WANES,Washington DNR,Squaw Creek,2005-09-08,1097.04663516,Electric Fence,Brewster,Okanogan County
+WAMCR,Mid Columbia Nation*,Weather Station,2005-07-05,4914.72713064,Miscellaneous,Mattawa,Grant County
+WACOA,Colville Agency,West Lake Omak,2005-07-12,11264.6368979,Equipment Use,Omak,Okanogan County
+WASES,Washington DNR,Wood Gulch,2005-07-23,5751.16112675,,Mabton,Yakima County
+WAOLP,Olympic NP,Bear Gulch II,2006-07-25,797.59433037,,Shelton,Mason County
+WANES,Washington DNR,Bisbee Mtn. Fire,2006-09-09,485.10347429,MiscellaneouS,Kettle Falls,Stevens County
+WAOWF,Okan-Wen NF,Cedar Creek (Tripod Complex),2006-08-22,1631.10971265,Lightning,Granite Falls,Chelan County
+WASES,Washington DNR,Columbia Complex,2006-08-21,109401.775441,,Dayton,Columbia County
+WASPS,Washington DNR,Dewatto 2,2006-09-02,61.26689338,Arson,Shelton,Mason County
+WAOWF,Okan-Wen NF,Flick Creek,2006-07-07,7888.75476127,Campfire,Granite Falls,Chelan County
+WAMSF,Mt. Baker-Snoq NF,Greenwater 7440,2006-09-02,193.16639124,,Enumclaw,King County
+WAYAA,BIA - Yakima,Jungle Butte (Jungle Butte Complex),2006-09-04,92.94075391,,White Salmon,Klickitat County
+WAYAA,BIA - Yakima,Klose Butte (Jungle Butte Complex),2007-09-04,36.79927721,,Goldendale,Klickitat County
+WAYAA,BIA - Yakima,Peavine Ridge (Jungle Butte Complex),2006-09-04,321.59226033,,White Salmon,Klickitat County
+WAOWF,Okan-Wen NF,Polallie,2006-09-04,961.65843032,Lightning,Cle Elum,Kittitas County
+WANES,Washington DNR,Quinn's Meadow,2006-08-29,323.23782097,Debris Burn,Rossland,
+WAOWF,Okan-Wen NF,Tatoosh (Tatoosh Complex),2006-08-22,54331.7820078,,Princeton,
+WAOWF,Okan-Wen NF,Tinpan,2006-07-07,9253.11235714,Lightning,Leavenworth,Chelan County
+WANES,Washington DNR,Valley Mill,2006-08-08,460.53613033,Debris Burn,Chewelah,Stevens County
+WAOWF,Okan-Wen NF,Van Peak,2006-09-04,1815.93884152,lightning,Princeton,
+WAWFS,Washington Fire Ser,Lewis and Clark,2007-06-13,752.88580924,Equipment Use,West Richland,Benton County
+WAWFS,Washington Fire Ser,Horse Heaven Complex - Sixprong,2007-07-13,20395.0014451,Lightning,Mabton,Yakima County
+WAWFS,Washington Fire Ser,Horse Heaven Complex - WoodGulch,2007-07-13,7665.65523068,,Mabton,Yakima County
+WACOF,Colville Forest,Crown Creek,2007-07-13,34.5634473,Lightning,Rossland,
+,,Moses - DNR Complex,1991-01-01,4440.26367979,,Deer Park,Spokane County
+,,Marshall,1991-01-01,988.30662535,,Spokane,Spokane County
+,,Happy Hill,1991-01-01,624.02797219,,Deer Park,Spokane County
+,,Ninemile,1991-01-01,15044.2340415,,Fairchild Air Force Base,Spokane County
+,,Chattaroy,1991-01-01,4728.47892144,,Deer Park,Spokane County
+,,Unknown,1985-01-01,184.77554057,,Dishman,Spokane County
+,,Ponderosa,1991-01-01,1474.66884266,,Dishman,Spokane County
+,,Jennings Road,1991-01-01,283.50566587,,Cheney,Spokane County
+,,Ninemile Rd,1996-01-01,3019.12956001,,Airway Heights,Spokane County
+,,Rambo Rd,1991-01-01,268.75577899,,Airway Heights,Spokane County
+,,Greenbluff,1991-01-01,98.21910112,,Mead,Spokane County
+,,Leeson Pit,1991-01-01,146.57212803,,Deer Park,Spokane County
+,,Temple,1991-01-01,190.3221334,,Trentwood,Spokane County
+,,Holcomb,1991-01-01,744.1369974,,Trentwood,Spokane County
+,,Trent,1991-01-01,797.3113032,,Otis Orchards-East Farms,Spokane County
+,,Hangman,1991-01-01,131.0569453,,Spokane,Spokane County
+,,Excelsior Road,1987-01-01,1255.68839543,,Spokane,Spokane County
+,,Salnave,1991-01-01,463.60811409,,Medical Lake,Spokane County
+,,Homestead,1991-01-01,283.16590289,,Otis Orchards-East Farms,Spokane County
+,,Springdale,1991-01-01,628.65720156,,Deer Park,Spokane County
+WAWFS,Washington Fire Ser,Browns Canyon Fire (Badger Mtn Complex),2008-07-09,1782.34826476,Miscellaneous,Entiat,Chelan County
+WAWFS,Washington Fire Ser,Baird Springs,2008-06-15,3645.75502655,,Quincy,Grant County
+WACOA,Colville Agency,Columbia River Road,2008-08-07,22155.092581,Arson,Coulee Dam,Okanogan County
+WACOA,Colville Agency,French Valley,2008-07-10,1366.42472569,,Omak,Okanogan County
+WANES,Washington DNR,Green Lake,2008-07-31,1350.32720281,Structure Fire,Okanogan,Okanogan County
+WAMCR,Mid Columbia NWR,Incident 262,2008-07-27,3142.16919896,,Moses Lake,Grant County
+WAOWF,Okan-Wen NF,Jack Creek,2008-08-10,1057.71003266,Lightning,Leavenworth,Chelan County
+WANES,Washington DNR,Jackass Butte (Rattlesnake Point Complex),2008-07-01,1765.70078015,Lightning,Okanogan,Okanogan County
+WANES,Washington DNR,Rattlesnake Point Complex,2008-07-01,752.53380953,,Brewster,Okanogan County
+WAWFS,Washington Fire Ser,Rock Lake,2008-08-18,2287.50286267,Missing/Undefined,Cheney,Spokane County
+WAWFS,Washington Fire Ser,Seep Lakes,2008-06-29,1901.06871034,Miscellaneous,Warden,Grant County
+WANES,Washington DNR,Spokane Valley,2008-07-10,1005.79278088,Unknown,Dishman,Spokane County
+WANES,Washington DNR,Swanson Lake,2008-08-18,18038.7310397,Missing/Undefined,Davenport,Lincoln County
+WACOA,Colville Agency,Wilmont,2008-07-13,148.8113713,Lightning,Davenport,Lincoln County
+WAYAA,BIA - Yakima,Ransier Road,2009-06-29,354.17699165,,Ahtanum,Yakima County
+WASES,Washington DNR,Forrest,2009-07-11,255.38197036,,Tieton,Yakima County
+WAHNC,Hanford,ENW,2009-07-17,3.22583463,,West Richland,Benton County
+WACOA,Colville Agency,Fish Hatchery,2009-07-23,237.13495438,Lightning,Coulee Dam,Okanogan County
+WACOA,Colville Agency,Owhi Tree,2009-07-23,10.45928844,Lightning,Coulee Dam,Okanogan County
+WACOA,Colville Agency,Johnson Lake,2009-07-23,711.99457144,Lightning,Coulee Dam,Okanogan County
+WAMSF,Mt. Baker-Snoq NF,Deer 1,2009-07-30,0.5322285,,Darrington,Snohomish County
+WAWFS,Washington Fire Ser,Union Valley,2009-07-29,522.41794441,Lightning,Chelan,Chelan County
+WAGPF,Gifford Pinchot NF,Langille,2009-07-27,471.01318891,,Morton,Lewis County
+WAMSF,Mt. Baker-Snoq NF,Gold Hill,2009-07-30,18.88934727,,Darrington,Snohomish County
+WACOA,Colville Agency,Milepost 281,2009-09-01,310.06664805,Miscellaneous,Okanogan,Okanogan County
+WAWFS,Washington Fire Ser,Avery,2009-08-13,264.60167568,,Dallesport,Klickitat County
+WACOF,Colville Forest,Sleepy,1899-12-30,1401.85057412,,Republic,Ferry County
+WAOWF,Okan-Wen NF,Discovery,2009-07-28,4120.28677628,,Tieton,Yakima County
+WAMCR,Mid Columbia NWR,Dry Creek Complex,2009-08-21,48901.6487232,,Desert Aire,Grant County
+WASES,Washington DNR,High Hill,2009-08-20,98.61899062,,Soap Lake,Grant County
+WASES,Washington DNR,SR-17,2009-08-20,897.49516682,,Soap Lake,Grant County
+WASES,Washington DNR,B.5,2009-08-20,282.1227773,,Soap Lake,Grant County
+WASES,Washington DNR,Trail,2009-07-05,63.30774332,Campfire,Ellensburg,Kittitas County
+WASES,Washington DNR,Oak Creek,2009-07-15,150.41143337,,Tieton,Yakima County
+WASES,Washington DNR,Nahahum,2009-08-19,48.50435878,,Cashmere,Chelan County
+WASES,Washington DNR,Lake Entiat,2009-06-02,182.42525023,,Entiat,Chelan County
+WASES,Washington DNR,Hale Storm,2009-07-31,54.80693999,,Tieton,Yakima County
+WANES,Washington DNR,Oden Road,2009-08-22,9607.49331868,Lightning,Okanogan,Okanogan County
+WACOA,Colville Agency,Milepost 38,2009-09-16,1910.88144832,Miscellaneous,Coulee Dam,Okanogan County
+WACOA,Colville Agency,Concrete Plant,2009-08-27,195.80524421,Arson,Coulee Dam,Okanogan County
+WANCP,North Cascades NP,Brush Creek,2009-08-02,391.44199063,Lightning,Hope,
+WAOWF,Okan-Wen NF,Preston-Fox,2009-10-04,1215.98778661,Debris Burning,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Twin Peaks,2009-09-03,666.36478383,,Tieton,Yakima County
+WACCC,Columbia Cascade,Dallesport,2010-07-12,1179.06542697,Power Line,Dallesport,Klickitat County
+WASES,Washington DNR,Swakane,2010-07-10,19437.0037022,Miscellaneous,Sunnyslope,Chelan County
+WAYKCN,Yakima County FD,Cowiche Mill,2010-07-18,6190.69731663,Miscellaneous,Tieton,Yakima County
+WASPA,Spokane Agency,Line,2010-07-12,909.85577977,Miscellaneous,Davenport,Lincoln County
+WANCP,North Cascades NP,Devils Gulch,2010-07-29,36.6341039,Lightning,West Wenatchee,Chelan County
+WANCP,North Cascades NP,Nahahum,2010-07-29,1947.45076291,Lightning,Cashmere,Chelan County
+WANCP,North Cascades NP,Tripp Canyon,2010-07-29,71.54658698,Lightning,Cashmere,Chelan County
+WANCP,North Cascades NP,Yaxon,2010-07-29,6.68998467,Lightning,Cashmere,Chelan County
+WANCP,North Cascades NP,Rainbow Bridge,2010-07-29,4117.88709118,,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Virginia Lake,1899-12-30,36683.9859826,,Okanogan,Okanogan County
+WAOWF,Okan-Wen NF,Rocky Hull,2000-07-22,9481.85679425,Lightning,Oroville,Okanogan County
+WAOWF,Okan-Wen NF,Whisky Mountain,2007-08-18,961.00487581,Lightning,Oroville,Okanogan County
+,,Fern Road,1899-12-30,15.65861976,,White Salmon,Klickitat County
+ORCGF,Columbia RG NSA,Courtney Road,2001-07-12,89.65697505,,White Salmon,Klickitat County
+ORPRD,Prineville Dist,Dog Creek,2001-07-12,568.583392,,Cle Elum,Kittitas County
+,,Unknown,1899-12-30,93.34316539,,White Salmon,Klickitat County
+WAOWF,Okan-Wen NF,Amabilis,2006-10-12,116.99950156,,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Rattlesnake Creek,2007-08-05,1653.59406844,,Tieton,Yakima County
+WAOWF,Okan-Wen NF,Trout,2006-06-27,139.95742929,Equipment Use,Tieton,Yakima County
+WAGPF,Gifford Pinchot NF,Lost Lake,1899-12-30,265.02327649,,Buckley,Pierce County
+WAYAA,BIA - Yakima,Mile Marker 44,2004-08-11,126.13880584,,Goldendale,Klickitat County
+WAOWF,Okan-Wen NF,Cape Labelle,1899-12-30,260.35901846,,Republic,Ferry County
+,,Avery,1899-12-30,284.03342097,,Dallesport,Klickitat County
+WASES,Washington DNR,Rocky Ford,2006-06-28,3183.48270341,,Soap Lake,Grant County
+ORUMF,Umatilla NF,Cottonwood,2007-08-18,3399.02909996,Equipment Use,Clarkston Heights-Vineland,Asotin County
+WAOWF,Okan-Wen NF,LEMAH,2009-07-25,649.35774667,Lightning,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,SHULL RIDGE,2009-07-17,211.74650227,Lightning,Princeton,
+WAOWF,Okan-Wen NF,SABLE,2009-07-30,542.3959977,Lightning,Leavenworth,Chelan County
+WAMSF,Mt. Baker-Snoq NF,MINERAL PARK,1899-12-30,403.96613125,,Darrington,Snohomish County
+WAMSF,Mt. Baker-Snoq NF,Swift Creek,2004-07-24,536.76633397,Lightning,Agassiz,
+WAMSF,Mt. Baker-Snoq NF,SPRING,2009-08-26,219.66443919,Lightning,Darrington,Snohomish County
+WAOWF,Okan-Wen NF,POWDER MOUNTAIN,2009-07-26,194.43636576,Lightning,Princeton,
+WAOWF,Okan-Wen NF,Foam Creek WFU,2008-08-08,602.47549739,Lightning,Darrington,Snohomish County
+WAMSF,Mt. Baker-Snoq NF,Downey,1899-12-30,319.68471631,,Darrington,Snohomish County
+WAMSF,Mt. Baker-Snoq NF,Sonny Boy,1899-12-30,391.14601514,,Darrington,Snohomish County
+WAMSF,Mt. Baker-Snoq NF,DOME CREEK,1899-12-30,229.20414951,,Darrington,Snohomish County
+WAOWF,Okan-Wen NF,McCoy,2007-09-27,484.6636945,,Chelan,Chelan County
+WAOWF,Okan-Wen NF,EightMile,2010-08-18,189.89080479,Lightning,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Crystal,1899-12-30,1284.65080848,,Leavenworth,Chelan County
+WASES,Washington DNR,Middle Fork,,2109.98351734,,Tieton,Yakima County
+WASES,Washington DNR,Carpenter Gulch,2008-07-09,120.72321205,Miscellaneou,Tieton,Yakima County
+WASES,Washington DNR,North Fork,,136.25184001,,Tieton,Yakima County
+WACOA,Colville Agency,Rattlesnake,2013-07-04,506.66195609,Miscellaneous,Davenport,Lincoln County
+WASES,Washington DNR,25 Mile,2013-07-04,2097.80321907,,Granite Falls,Chelan County
+WACOA,Colville Agency,Hwy 155,2013-07-10,194.2256612,Miscellaneou,Coulee Dam,Okanogan County
+WANES,Washington DNR,Knox in the Middle,2013-08-01,79.74378467,Lightning,Omak,Okanogan County
+WANES,Washington DNR,Knox Knox,2013-08-01,3.95287866,Lightning,Omak,Okanogan County
+WAOWF,Okan-Wen NF,Moore Point,2013-07-28,1573.13793941,Lightning,Granite Falls,Chelan County
+WAYAA,BIA - Yakima,Mile Marker 28,2013-07-24,26091.662329,Miscellaneous,Goldendale,Klickitat County
+WACOA,Colville Agency,Cameron Lake,2013-08-07,131.10285924,Lightning,Okanogan,Okanogan County
+WACOA,Colville Agency,Buffalo Lake,2009-08-21,328.63973324,Arson,Coulee Dam,Okanogan County
+WASES,Washington DNR,Eureka,2010-08-06,20835.4749717,Missing/Undefined,Connell,Franklin County
+WAOWF,Okan-Wen NF,Boulder Creek,2010-08-04,10100.7599784,,Cle Elum,Kittitas County
+WAOLP,Olympic NP,Hopper,2010-08-05,385.06521863,Lightning,Shelton,Mason County
+WANES,Washington DNR,Fish Hatchery,2010-08-26,646.51562764,Powerline,Republic,Ferry County
+WASES,Washington DNR,Hiway 8 Fire,2010-08-26,2018.38354141,Power Line,Chenoweth,Wasco County
+WANES,Washington DNR,Slide Creek,2010-08-26,990.42357425,Power Line,Colville,Stevens County
+WACOA,Colville Agency,Buffalo Lake,2010-08-27,407.94807037,Arson,Coulee Dam,Okanogan County
+WASES,Washington DNR,Baird Springs,2010-09-10,7668.88227055,,Quincy,Grant County
+WAHNC,Hanford,FFTF,2010-08-01,1266.00594525,,West Richland,Benton County
+WAPCS,Washington DNR,Hilltop,2010-08-14,133.9995336,,Fern Prairie,Clark County
+WAPCS,Washington DNR,Speelyai,2010-07-24,122.54880609,,Amboy,Clark County
+WAWFS,Washington Fire Ser,Vansycle Canyon,2011-08-07,4509.45687229,,Finley,Benton County
+WAOWF,Okan-Wen NF,Tumwater Canyon,2011-08-18,458.11336244,Miscellaneous,Leavenworth,Chelan County
+WANES,Washington DNR,Salmon,2011-08-29,1979.07440561,Miscellaneous,Okanogan,Okanogan County
+WAOLP,Olympic NP,Big Hump,2011-09-01,1238.08229378,,Seabeck,Kitsap County
+WAWFS,Washington Fire Ser,Wishram II,2011-08-29,8989.50272899,,Goldendale,Klickitat County
+WASES,Washington DNR,Monastery Complex,2011-09-07,3621.14473691,Miscellaneous,Goldendale,Klickitat County
+WANES,Washington DNR,Barber Mountain,2011-09-19,814.61352266,,Oliver,
+WACOA,Colville Agency,Kwei Kwei Creek,2011-08-06,625.7733369,,Coulee Dam,Okanogan County
+WANES,Washington DNR,Maryls Road,2011-08-09,408.59882517,,Tonasket,Okanogan County
+WASES,Washington DNR,Washington Creek,2011-08-01,245.68284686,,Chelan,Chelan County
+WASPS,Washington DNR,Eels Hill,2011-08-17,49.97808189,,Shelton,Mason County
+WAOLS,Olympic NP,Beckett Point,2011-09-05,19.08747331,,Port Hadlock-Irondale,Jefferson County
+WASPS,Washington DNR,California Rd,2011-08-14,0.40223446,,Shelton,Mason County
+WAWFS,Washington Fire Ser,Bell Plain,2011-09-05,3951.88053812,,Pomeroy,Garfield County
+WAWFS,Washington Fire Ser,Milepost 31,2012-06-13,1127.69539328,,Othello,Adams County
+WASES,Washington DNR,Navarre,2012-07-05,602.21937723,Miscellaneous,Granite Falls,Chelan County
+WASPD,Spokane BLM,241-BLM,2012-07-19,4614.20563934,,Desert Aire,Grant County
+WASPD,Spokane BLM,Antoine 2,2012-08-05,6838.65618025,,Chelan,Chelan County
+WACOA,Colville Agency,Buffalo Lake Road,2012-08-15,11307.5080462,Lightning,Coulee Dam,Okanogan County
+WASPD,Spokane BLM,Death Wind Canyon,2012-08-19,824.04378885,Lightning,East Wenatchee Bench,Douglas County
+WASES,Washington DNR,Taylor Bridge,2012-08-13,23501.0818807,Miscellaneous,Ellensburg,Kittitas County
+WAYAA,BIA - Yakima,Diamond Butte,2012-08-19,284.42605269,,Tieton,Yakima County
+WASPD,Spokane BLM,Roosevelt,2012-07-03,2826.61209685,Miscellaneous,Boardman,Morrow County
+ORWWF,Wallowa-Whitman NF,Cache Creek,2012-08-21,73694.7390784,,Asotin,Asotin County
+WASES,Washington DNR,Highway 141,2012-09-05,1635.84273673,,White Salmon,Klickitat County
+WACOA,Colville Agency,Manila Creek,2012-09-09,200.75700637,Lightning,Coulee Dam,Okanogan County
+WACOA,Colville Agency,Top of Peter Dan Creek,2012-09-08,20.24074197,Lightning,Coulee Dam,Okanogan County
+WACOA,Colville Agency,Timm Brothers,2012-09-09,1358.68394697,Miscellaneou,Bridgeport,Douglas County
+WACOA,Colville Agency,Jim Creek #3,2012-09-08,26.15239952,Lightning,Kettle Falls,Stevens County
+WAWFS,Washington Fire Ser,Leahy Junction,2012-09-10,72425.9299286,Lightning,Coulee Dam,Okanogan County
+WASPD,Spokane BLM,Barker Canyon,2012-09-08,15804.2504511,,Coulee Dam,Okanogan County
+WAWFS,Washington Fire Ser,Apache Pass,2012-09-09,23324.0933655,,Davenport,Lincoln County
+WAOWF,Okan-Wen NF,Leecher,2012-09-09,1319.70299628,Lightning,Brewster,Okanogan County
+WAOWF,Okan-Wen NF,Hunter,2012-09-09,211.42089848,Lightning,Manson,Chelan County
+WAOWF,Okan-Wen NF,TRAIL CREEK,2012-09-09,24.11553133,Lightning,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Stafford Creek,2012-09-09,33.80615958,Lightning,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Diamond Head,2012-09-10,1055.94727478,,Cashmere,Chelan County
+WAOWF,Okan-Wen NF,Gold Creek Springs,2012-09-09,31.51178483,Lightning,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Old Blewett Pass,2012-09-10,22.40927884,Lightning,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Moon Beam,2012-09-10,0.30379927,Lightning,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Jack Creek Pass,2012-09-09,7.27095209,,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Byrd,2012-09-09,14164.0851867,Lightning,Entiat,Chelan County
+WAOWF,Okan-Wen NF,Timber Creek,2012-09-15,153.01405725,,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Wild Rose,2012-09-09,1926.29889249,,Tieton,Yakima County
+WAOWF,Okan-Wen NF,Buckhorn,2012-09-09,4631.12180652,Lightning,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,French Cabin Creek,2012-09-10,42.73914009,Lightning,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,First Creek,2012-09-09,1361.00016028,Lightning,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Maverick,2012-09-11,20.54253868,Lightning,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Goat,2012-09-15,7377.60248272,Miscellaneous,Chelan,Chelan County
+WAOWF,Okan-Wen NF,Poison Canyon,2012-09-08,5931.40078717,Lightning,Cashmere,Chelan County
+WAOWF,Okan-Wen NF,Canyon,2012-09-09,7557.52420985,Lightning,West Wenatchee,Chelan County
+WAOWF,Okan-Wen NF,White Pine,2012-09-11,60.85919715,Lightning,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Cashmere,2012-09-09,2791.69444601,,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Pyramid,2012-09-09,1906.12773671,Lightning,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Klone Peak,2012-09-09,1506.49193026,Lightning,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Basalt Peak,2012-09-12,1261.05014547,,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Cuitin Lake,2012-09-11,309.12281339,Lightning,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Sears Creek,2012-09-09,656.20733244,,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Peavine Canyon,2012-09-08,19997.9812742,Lightning,West Wenatchee,Chelan County
+WASPS,Washington DNR,Powerline #2,2012-10-04,229.47797079,Arson,Shelton,Mason County
+WAOWF,Okan-Wen NF,Table Mountain Fire,2012-09-15,42481.2385799,Lightning,Ellensburg,Kittitas County
+WACOA,Colville Agency,St Mary's Mission Road,2012-10-02,16853.1830008,,Omak,Okanogan County
+WAGPF,Gifford Pinchot NF,Cascade Creek,2012-09-09,20096.3207424,Lightning,White Salmon,Klickitat County
+WACOF,Colville Forest,Radio,2012-09-11,42.59117225,Lightning,Grand Forks,
+WAGPF,Gifford Pinchot NF,South Point,2012-09-19,336.8149697,,Morton,Lewis County
+WASES,Washington DNR,Foster Creek,2012-07-12,1294.12726259,Lightning,Bridgeport,Douglas County
+WASES,Washington DNR,Quilomene,2012-07-12,156.93497125,Lightning,Quincy,Grant County
+WASES,Washington DNR,Litttle Parke Creek,2012-09-05,692.94109133,Recreation,Kittitas,Kittitas County
+WACOA,Colville Agency,Meteor,2012-04-11,210.58513579,,Omak,Okanogan County
+WACOA,Colville Agency,South Omak Lake,2012-07-13,1002.99404437,,Kettle Falls,Stevens County
+WAYAA,BIA - Yakima,North Ahtanum,2012-08-31,1661.10993047,,Ahtanum,Yakima County
+WASPD,Spokane BLM,Cache Butte,,470.30296328,,Coulee Dam,Okanogan County
+WASPD,Spokane BLM,Crane Road,2012-08-01,11131.8751941,,Brewster,Okanogan County
+WASPD,Spokane BLM,Washout,2012-06-30,595.70040742,,Sunnyside,Yakima County
+WASPD,Spokane BLM,Miller Homestead,2012-09-01,358.85424733,,Medical Lake,Spokane County
+WAGPF,Gifford Pinchot NF,Cold Springs,2008-07-12,7982.99115908,Lightning,White Salmon,Klickitat County
+WAOWF,Okan-Wen NF,Camels Hump,2008-07-24,116.58766164,Miscellaneou,Granite Falls,Chelan County
+WANES,Washington DNR,Cayuse,2008-07-09,1744.23240931,Debris Burning,Tonasket,Okanogan County
+ORCGF,Columbia RG NSA,Maryhill,2006-06-18,801.31017098,Miscellaneous,Goldendale,Klickitat County
+WANES,Washington DNR,Gateway Lane,2006-07-15,113.23337569,Equipment Use,Cheney,Spokane County
+WASPD,Spokane BLM,Badger Hollow,,7384.36197579,,Waitsburg,Walla Walla County
+WASPD,Spokane BLM,Welch Road,,2570.95263392,,Waitsburg,Walla Walla County
+WACOA,Colville Agency,Cameron Lake Road,2006-08-22,1568.08508591,Equipment Use,Omak,Okanogan County
+WACOA,Colville Agency,Swawilla Basin,2006-07-14,81.54705464,Arson,Coulee Dam,Okanogan County
+WANES,Washington DNR,Fruit Hill,2006-07-29,115.56873457,Arson,Millwood,Spokane County
+WASES,Washington DNR,Palouse River,2006-08-23,654.42064529,,Colfax,Whitman County
+WASPS,Washington DNR,Carbon Copy,2006-08-20,276.96979929,,Buckley,Pierce County
+WAOWF,Okan-Wen NF,Trinity,2004-07-22,3.53739888,Lightning,Leavenworth,Chelan County
+WAYAA,BIA - Yakima,Spring Creek,2004-04-27,707.44860477,Debris Burning,Toppenish,Yakima County
+WAMSF,Mt. Baker-Snoq NF,Fathers Day,2004-06-19,20.49741933,,Enumclaw,King County
+WAMSF,Mt. Baker-Snoq NF,Swift Creek,2004-07-17,172.91715912,Lightning,Agassiz,
+WAMSF,Mt. Baker-Snoq NF,Survey Point,2004-08-14,68.18346877,Lightning,Peaceful Valley,Whatcom County
+WAOWF,Okan-Wen NF,Glory Mountain,,928.73201708,,Darrington,Snohomish County
+WAOWF,Okan-Wen NF,Sweetgrass,1899-12-30,181.31181877,,Brewster,Okanogan County
+WACOF,Colville Forest,Togo,1899-12-30,5218.37223585,,Grand Forks,
+WAOWF,Okan-Wen NF,Wilcox,1899-12-30,440.55194426,,Oroville,Okanogan County
+WAOWF,Okan-Wen NF,Middle Quartz Mt,1899-12-30,7402.71029315,,Princeton,
+WAOWF,Okan-Wen NF,Quartz Mt,1899-12-30,4208.26815754,,Princeton,
+,,Icicle Complex,1899-12-30,8006.07138871,,Leavenworth,Chelan County
+WACOF,Colville Forest,Mt Leona,1899-12-30,4895.29862506,,Grand Forks,
+WACOA,Colville Agency,Six Mile 2,2013-08-10,4.82819581,,Davenport,Lincoln County
+WACOA,Colville Agency,Whitmore South,2013-08-10,169.38386915,Lightning,Coulee Dam,Okanogan County
+WACOA,Colville Agency,Six Mile,2013-08-10,247.61427284,Lightning,Davenport,Lincoln County
+WACOA,Colville Agency,Whitmore 3,2013-08-10,4.98457132,Lightning,Omak,Okanogan County
+WANES,Washington DNR,Little Chopaka,2007-07-07,4428.34103214,Miscellaneous,Osoyoos,
+WAWFS,Washington Fire Ser,Easy Street,2007-07-07,5208.62753773,Miscellaneous,Sunnyslope,Chelan County
+WAOWF,Okan-Wen NF,Crow Creek,2007-08-02,83.00827402,,Cle Elum,Kittitas County
+WASPD,Spokane BLM,Douglas Creek,2007-07-09,3156.02448451,Fireworks,Quincy,Grant County
+WANES,Washington DNR,Tunk Grade,2007-07-14,16498.0661451,Lightning,Tonasket,Okanogan County
+WAWFS,Washington Fire Ser,Les Blair,2007-07-30,7037.32238023,,Finley,Benton County
+WASES,Washington DNR,Beasley Hill,2007-08-14,85.71553363,,Ephrata,Grant County
+WACOF,Colville Forest,Pend D'Oreille,2007-08-11,9730.19777611,Lightning,Fruitvale,
+WANCP,North Cascades NP,Tolo,2007-07-15,293.17027386,Lightning,Darrington,Snohomish County
+WAMCR,Mid Columbia NWR,Wautoma,2007-08-16,67291.4019476,Miscellaneous,Prosser,Benton County
+,,Black Rock,2007-08-31,32139.3458542,,Warden,Grant County
+,,Milepost 17,2007-08-13,6452.10513917,Miscellaneous,Benton City,Benton County
+WAWFS,Washington Fire Ser,Horse Heaven Complex - McBee,2007-07-13,3097.28287273,Lightning,Benton City,Benton County
+WASES,Washington DNR,Easton Ridge,2007-08-02,401.45718876,Equipment Use,Cle Elum,Kittitas County
+,,South Omak Lake,2007-08-30,10508.6868555,Arson,Omak,Okanogan County
+WAWFS,Washington Fire Ser,Horse Heaven Complex - Overlook,2007-07-13,19565.9006124,Lightning,Basin City,Franklin County
+WACOA,Colville Agency,Manilla Creek,2007-09-10,26799.111004,Arson,Coulee Dam,Okanogan County
+WASES,Washington DNR,Boughton Mill,2007-09-20,138.02876951,Railroad,Hood River,Hood River County
+WAYAA,BIA - Yakima,Pine Spring,2007-08-11,1850.59474474,Arson,Toppenish,Yakima County
+WAOWF,Okan-Wen NF,Domke Lake,2007-08-05,10333.1469595,Lightning,Granite Falls,Chelan County
+,,Panther Creek WFU,2007-08-05,204.02074324,Lightning,Leavenworth,Chelan County
+WANES,Washington DNR,Arbys 231,2007-09-07,6.56591815,Smoker,Deer Park,Spokane County
+WANES,Washington DNR,Burnt Valley,2007-09-08,26.68260495,Electric Fen,Chewelah,Stevens County
+,,Whispering Pines,2007-09-15,14.05962961,Debris Burning,Airway Heights,Spokane County
+WANES,Washington DNR,Marshall,2007-08-11,384.39492484,,Cheney,Spokane County
+WASES,Washington DNR,Ellensburg Pass,2007-09-10,452.84227509,,Tieton,Yakima County
+WANES,Washington DNR,Chamokane Creek,2007-07-02,155.91204435,,Fairchild Air Force Base,Spokane County
+WANES,Washington DNR,Wrights Valley,2007-09-03,226.2296809,,Chewelah,Stevens County
+WAOWF,Okan-Wen NF,Conrad Lake,2013-08-13,1103.61827514,Lightning,Tieton,Yakima County
+WASPD,Spokane BLM,Burbank,2013-07-22,202.56539926,Miscellaneous,Terrace Heights,Yakima County
+WANES,Washington DNR,Keystone North,2013-08-01,459.27384782,,Tonasket,Okanogan County
+WANES,Washington DNR,Keystone,2013-08-01,434.30627469,Lightning,Omak,Okanogan County
+WANES,Washington DNR,Tunk Peak,2013-08-01,12.60465328,Lightning,Omak,Okanogan County
+WANES,Washington DNR,Corral Lake,2013-08-01,0.97553084,,Omak,Okanogan County
+WAWFS,Washington Fire Ser,Dead Canyon,2013-09-10,3707.96752909,Miscellaneous,Mabton,Yakima County
+WASPD,Spokane BLM,Webber,2013-09-18,681.24456714,Fireworks,Benton City,Benton County
+WAWFS,Washington Fire Ser,B&O,2013-07-15,1451.15506547,,Okanogan,Okanogan County
+WASPD,Spokane BLM,Ione,2013-07-04,338.53388027,Miscellaneou,Pasco,Franklin County
+WASES,Washington DNR,Grand Ronde,2013-08-29,613.01624071,Lightning,Asotin,Asotin County
+WASES,Washington DNR,Mail Trail,2013-06-09,2495.18488054,Miscellaneous,Asotin,Asotin County
+WAPCS,Washington DNR,Dog Mountain,2013-05-04,198.76699347,,Morton,Lewis County
+ORCGF,Columbia RG NSA,Major Creek,2013-07-03,149.20407701,Miscellaneous,White Salmon,Klickitat County
+WAOWF,Okan-Wen NF,Alpine,2014-08-01,19.39150427,Lightning,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Chiwaukum Creek,2014-07-15,13894.5896715,Lightning,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Mills Canyon,2014-07-08,22005.9706214,Structure Fire,Entiat,Chelan County
+WASES,Washington DNR,Cottonwood,2014-06-17,8942.47740757,Miscellaneous,Selah,Yakima County
+WASES,Washington DNR,25 Mile,2014-07-10,218.18466237,Unknown,Granite Falls,Chelan County
+WASES,Washington DNR,Skookum,2014-07-14,60.84558516,,Chenoweth,Wasco County
+WANES,Washington DNR,Carlton Complex-Rising Eagle Rd,2014-07-14,255899.595766,Lightning,Brewster,Okanogan County
+WACOA,Colville Agency,Devils Elbow,2014-08-03,24003.2145444,Lightning,Republic,Ferry County
+WASPD,Spokane BLM,Watermelon,2014-07-19,11416.9819524,Unknown,Medical Lake,Spokane County
+WAOWF,Okan-Wen NF,Upper Falls,2014-08-06,8113.6673509,Lightning,Princeton,
+WAOWF,Okan-Wen NF,South Cle Elum Ridge,2014-08-07,887.71468802,,Cle Elum,Kittitas County
+WASES,Washington DNR,I-82 Manashtash,2014-07-03,1994.73311738,Burnin Material,Kittitas,Kittitas County
+WASES,Washington DNR,Yaxon Canyon,2014-09-22,45.83826974,Lightning,Cashmere,Chelan County
+WASES,Washington DNR,Foster Creek,2014-06-03,377.30755529,Lightning,Bridgeport,Douglas County
+WASES,Washington DNR,Box Canyon,2014-08-03,54.74024668,Lightning,Goldendale,Klickitat County
+WASES,Washington DNR,Auvil Canyon,2014-08-21,633.13544534,Lightning,Entiat,Chelan County
+WASES,Washington DNR,BMIDC INC 881,2014-08-11,131.76951686,Lightning,Asotin,Asotin County
+WASES,Washington DNR,BMIDC INC 879,2014-08-11,30.07019646,Lightning,Asotin,Asotin County
+WAPCS,Washington DNR,Teague Rd,2014-08-10,58.57169876,,Rochester,Thurston County
+WACOA,Colville Agency,Belvedere,2014-06-04,865.45746464,,Coulee Dam,Okanogan County
+WACOA,Colville Agency,Brody Canyon,2014-06-12,818.24419222,,Coulee Dam,Okanogan County
+WACOA,Colville Agency,Lawson Flats,2014-04-07,410.67404833,Human,Kettle Falls,Stevens County
+WANES,Washington DNR,Running Deer,2014-08-27,25.61096661,,Deer Park,Spokane County
+WASES,Washington DNR,Saddle Mountain,2014-07-18,24917.4430235,,Mattawa,Grant County
+WAPCS,Washington DNR,Mineral Hill,2014-09-07,6.09674576,,Eatonville,Pierce County
+WASPD,Spokane BLM,Malaga,2014-05-28,1248.52300937,Lightning,South Wenatchee,Chelan County
+WACOA,Colville Agency,Silver Creek II,2014-07-04,273.91415006,Human,Coulee Dam,Okanogan County
+WAWFS,Washington Fire Ser,Rock Hill,2014-07-06,1129.53258719,Human,Chelan,Chelan County
+WANES,Washington DNR,Lake Spokane,2014-07-09,1016.31089077,Structure Fire,Fairchild Air Force Base,Spokane County
+WASPD,Spokane BLM,R Road,2014-07-16,3320.86240466,Unknown,Coulee Dam,Okanogan County
+WANES,Washington DNR,Bugg Road,2014-07-21,1168.9473472,Human,Tonasket,Okanogan County
+WAWFS,,Snake River,2016-08-02,11366.2383583,Human,Pullman,Whitman County
+WAOLP,,Cox Valley,2016-07-21,56.99803276,Lightning,Port Angeles,Clallam County
+WANWS,,Proctor Creek 62 RD,2016-05-13,289.1534681,Undetermined,Gold Bar,Snohomish County
+WANWS,,Hot Shot,2016-05-12,59.49864516,Undetermined,Arlington Heights,Snohomish County
+WASPD,,Webber Canyon,2016-05-11,504.28727933,Undetermined,Benton City,Benton County
+WASPD,,Sunland,2016-05-29,1912.50082456,Human,Quincy,Grant County
+WACOA,,Timm Ranch,2016-06-08,1357.30197908,Undetermined,Bridgeport,Douglas County
+WASPD,,Beam Road,2016-06-20,1293.9548962,Human,Granger,Yakima County
+WASPD,,Rocky Ford,2016-07-09,1951.63481456,Human,Ritzville,Adams County
+WASPD,,McBee Command,2016-07-14,1689.169807,Human,Benton City,Benton County
+WASES,,Antilon Lake,2016-07-29,827.07512359,Undetermined,Manson,Chelan County
+WASPD,,Black Rock Road,2016-07-30,16005.3367158,Undetermined,Moses Lake,Grant County
+WAOWF,,Halfway,2016-07-31,341.24727719,Human,Cle Elum,Kittitas County
+WASPD,,Range 12,2016-07-30,176580.632227,Undetermined,Sunnyside,Yakima County
+WAWFS,,Road 10,2016-08-02,2567.78460001,Undetermined,Moses Lake North,Grant County
+WACOA,,Kewa,2016-08-02,1893.98283231,Undetermined,Kettle Falls,Stevens County
+WAYAA,,Tule #6,2016-08-21,8469.38745188,Undetermined,Toppenish,Yakima County
+WAWFS,,Kahlotus,2016-08-21,8463.65624902,Undetermined,Connell,Franklin County
+WANES,,Wellesley,2016-08-21,341.17202585,Undetermined,Millwood,Spokane County
+WANES,,Cayuse Mtn.,2016-08-21,18095.9621138,Human,Davenport,Lincoln County
+WANES,,Yale,2016-08-21,5870.23431293,Undetermined,Opportunity,Spokane County
+WANES,,Hart,2016-08-21,4936.4593469,Undetermined,Davenport,Lincoln County
+WANES,,Deep North,2016-08-21,590.98275031,Undetermined,Trail,
+WAOWF,,Buck Creek,2016-07-22,3207.42894668,Lightning,Leavenworth,Chelan County
+WAOWF,,Saul,2016-08-21,463.72948942,Undetermined,Leavenworth,Chelan County
+WASES,,Suncrest,2016-08-27,420.1242931,Undetermined,Leavenworth,Chelan County
+WAMCR,,Division Road,2016-08-10,722.28631859,Undetermined,Royal City,Grant County
+WASPD,,Lower Crab Creek,2016-08-05,5746.62855081,Undetermined,Mattawa,Grant County
+WAOLP,,Hayes Two,2016-07-26,2389.91562969,Lightning,Port Angeles East,Clallam County
+WAOLP,,Godkin,2016-07-25,563.31253855,Lightning,Port Angeles,Clallam County
+WAOLP,,Ignar Creek,2016-07-29,79.93269319,Lightning,Port Angeles East,Clallam County
+WASPD,,Morris Lane,2016-07-28,1414.59684731,Human,Zillah,Yakima County
+WACOA,,Elmer City,2016-09-11,5491.12971156,Human,Coulee Dam,Okanogan County
+WAWFS,,Starbuck,2016-07-17,2481.14590226,Human,Dayton,Columbia County
+WAWFS,,Fletcher Road,2016-08-07,6780.17979776,Lightning,Waitsburg,Walla Walla County
+WAWFS,,230 Switch Yard,2016-09-12,234.20965434,Undetermined,Coulee Dam,Okanogan County
+WASPD,,Old Lady Creek,2016-09-10,2548.08772882,Undetermined,Moro,Sherman County
+WAOWF,,Rock Creek,2016-09-10,1382.51251178,Undetermined,Cle Elum,Kittitas County
+WANES,,Pickens North,2016-08-24,724.04506887,Human,Tonasket,Okanogan County
+WAWFS,,South Ward Gap,2016-07-31,5039.58148546,Undetermined,Prosser,Benton County
+WANCP,North Cascades NP,Lone Mountain 1,2014-07-14,2436.74857203,Lightning,Granite Falls,Chelan County
+WAWFS,Washington Fire Ser,Sand Ridge,2014-08-20,2276.76287945,Lightning,Mabton,Yakima County
+WAOWF,Okan-Wen NF,Little Bridge Creek,2014-08-03,4959.32442996,Lightning,Granite Falls,Chelan County
+WAOWF,Okan-Wen NF,Shoofly,2014-08-04,163.0532491,Lightning,Leavenworth,Chelan County
+WAWFS,Washington Fire Ser,Trinidad,2014-09-13,211.19507186,Human,Quincy,Grant County
+WAOWF,Okan-Wen NF,Middle Mountain,2014-07-13,412.45699483,Lightning,Princeton,
+WAWFS,Washington Fire Ser,Monumental,2014-09-03,11402.425846,Human,Waitsburg,Walla Walla County
+WASPD,Spokane BLM,Bighorn,2014-08-06,265.97106209,,Kittitas,Kittitas County
+WASPD,Spokane BLM,Coyote Flats,2014-07-14,1785.49944535,Lightning,Soap Lake,Grant County
+WASES,Washington DNR,Station,2014-08-04,37.38143805,Unknown,Goldendale,Klickitat County
+WANCP,North Cascades NP,Thunder Creek,2015-05-30,103.0,Lightning,Darrington,Snohomish County
+WANES,Washington DNR,Egypt Loop 2,2015-06-15,210.0,Undetermined,Davenport,Lincoln County
+WAMCR,Mid Columbia NWR,Saddle Lakes,2015-06-28,14449.0,Lightning,Royal City,Grant County
+WASES,Washington DNR,Sleepy Hollow,2015-06-28,2954.0,Undetermined,West Wenatchee,Chelan County
+WAWFS,Washington Fire Ser,Junction,2015-07-05,981.0,Undetermined,Goldendale,Klickitat County
+WASES,Washington DNR,Davies Pass,2015-07-02,1300.0,Undetermined,Goldendale,Klickitat County
+WASPD,Spokane BLM,Beezley Hill,2015-07-05,1715.0,Undetermined,Quincy,Grant County
+WASPD,Spokane BLM,Willow Springs,2015-07-05,486.0,Undetermined,Quincy,Grant County
+WACOA,Colville Agency,Twenty-One Mile Grade,2015-07-01,2252.0,Human,Republic,Ferry County
+WANES,Washington DNR,231,2015-07-03,971.0,Human,Deer Park,Spokane County
+WANES,Washington DNR,Little Spokane,2015-07-11,168.0,Undetermined,Fairwood,Spokane County
+WAGPF,Gifford Pinchot NF,Horseshoe,2015-07-03,340.0,Lightning,White Salmon,Klickitat County
+WAGPF,Gifford Pinchot NF,Riley,2015-07-09,65.0,Lightning,White Salmon,Klickitat County
+WAOWF,Okan-Wen NF,Wildhorse,2015-07-20,163.0,Lightning,Oroville,Okanogan County
+WAPCS,Washington DNR,Colvin Creek,2015-07-19,111.0,Human,La Center,Clark County
+WASES,Washington DNR,Blue Creek,2015-07-20,5993.0,Undetermined,Walla Walla East,Walla Walla County
+WACOF,Colville Forest,North Boulder 2,2015-07-20,233.0,Lightning,Grand Forks,
+WAWFS,Washington Fire Ser,Gilmore Gulch,2015-07-05,7488.0,Undetermined,Asotin,Asotin County
+WANCP,North Cascades NP,Goode,2015-07-29,479.0,Undetermined,Darrington,Snohomish County
+WAWFS,Washington Fire Ser,Hwy 8,2015-08-04,33105.0,Undetermined,Mabton,Yakima County
+WAPCS,Washington DNR,Gish,2015-08-09,101.0,Undetermined,Napavine,Lewis County
+WANES,Washington DNR,9 Mile,2015-08-13,4720.0,Undetermined,Oroville,Okanogan County
+WACOF,Colville Forest,Baldy,2015-08-01,515.0,Undetermined,Fruitvale,
+WANES,Washington DNR,Roy,2015-08-14,120.0,Undetermined,Republic,Ferry County
+WANCP,North Cascades NP,Rocky Beaver,2015-08-10,141.0,Lightning,Hope,
+WANCP,North Cascades NP,Snowfield,2015-08-10,184.0,Undetermined,Darrington,Snohomish County
+WANCP,North Cascades NP,Goodell,2015-08-10,7118.0,Lightning,Darrington,Snohomish County
+WANCP,North Cascades NP,Cat Island,2015-08-10,148.0,Lightning,Hope,
+WAOLP,Olympic NP,Paradise,2015-06-15,2798.0,Lightning,Port Angeles,Clallam County
+WANES,Washington DNR,Gold Hill,2015-08-31,556.0,Lightning,Kettle Falls,Stevens County
+WANCP,North Cascades NP,Thursday Creek,2015-08-10,566.0,Lightning,Hope,
+WANCP,North Cascades NP,No Name 15,2015-08-10,344.0,Lightning,Hope,
+WANES,Washington DNR,Twisp River,2015-08-19,11222.0,Undetermined,Granite Falls,Chelan County
+WANES,Washington DNR,Marble Valley,2015-08-14,3082.0,Undetermined,Colville,Stevens County
+WAOWF,Okan-Wen NF,Blankenship,2015-07-13,212.0,Undetermined,Darrington,Snohomish County
+WACOF,Colville Forest,Hall Mountain,2015-08-17,39.0,Undetermined,Salmo,
+WANES,Washington DNR,Onata Creek,2015-08-17,547.0,Lightning,Salmo,
+WAOWF,Okan-Wen NF,First Creek,2015-08-14,7491.0,Lightning,Granite Falls,Chelan County
+WAYAA,BIA - Yakima,Cougar Creek,2015-08-10,53514.0,Lightning,White Salmon,Klickitat County
+WAOWF,Okan-Wen NF,Wolverine,2015-06-29,65550.0,Lightning,Granite Falls,Chelan County
+WANES,Washington DNR,Carpenter Road,2015-08-14,64043.0,Lightning,Davenport,Lincoln County
+WASPD,Spokane BLM,Reach,2015-08-14,89093.0,Undetermined,Chelan,Chelan County
+WAOWF,Okan-Wen NF,Meeks Table,2015-09-12,1021.0,Undetermined,Tieton,Yakima County
+WASES,Washington DNR,Horsethief Butte,2015-09-14,6383.0,Undetermined,Dallesport,Klickitat County
+WAMCR,Mid Columbia NWR,Stateline,2015-09-13,8008.0,Undetermined,Finley,Benton County
+WAGPF,Gifford Pinchot NF,Alder Lake,2015-07-26,359.0,Lightning,Eatonville,Pierce County
+WASPD,Spokane BLM,Pegg Canyon,2015-07-10,14769.0,Lightning,Quincy,Grant County
+WASPD,Spokane BLM,Jameson Lake,2015-07-10,6364.0,Lightning,Soap Lake,Grant County
+WASPD,Spokane BLM,South Sulphur Springs,2015-06-12,764.0,Undetermined,Soap Lake,Grant County
+WASPD,Spokane BLM,Seven Springs,2015-08-10,542.0,Undetermined,Davenport,Lincoln County
+WANES,Washington DNR,I-90 Sprague,2015-08-01,1692.0,Undetermined,Medical Lake,Spokane County
+WAMCR,Mid Columbia NWR,Saddle Mountain,2015-06-29,447.0,Undetermined,Royal City,Grant County
+WAWFS,Washington Fire Ser,Monument,2015-06-30,1954.0,Undetermined,Quincy,Grant County
+WABENN,,Les Blair,2015-06-27,866.0,Undetermined,Highland,Benton County
+WASPD,Spokane BLM,Berrian,2015-06-27,877.0,Undetermined,Hermiston,Umatilla County
+WASPD,Spokane BLM,Outlaw Draw,2015-07-15,1981.0,Undetermined,Bridgeport,Douglas County
+WACOF,Colville Forest,Tower,2015-08-12,24734.0,Lightning,Newport,Pend Oreille County
+WACOF,Colville Forest,Grease Creek,2015-08-14,730.0,Lightning,Salmo,
+WACOF,Colville Forest,South Fork Slate Trail - D5,2015-08-18,171.0,Undetermined,Salmo,
+WACOF,Colville Forest,Stickpin,2015-08-11,53829.0,Lightning,Grand Forks,
+WACOF,Colville Forest,Renner,2015-08-17,13794.0,Undetermined,Kettle Falls,Stevens County
+WACOF,Colville Forest,Graves Mountain,2015-08-14,8570.0,Lightning,Kettle Falls,Stevens County
+ORUMF,Umatilla NF,Bear Ridge,2015-08-13,1943.0,Lightning,Pomeroy,Garfield County
+ORUMF,Umatilla NF,Butte Creek,2015-08-13,78759.0,Lightning,Dayton,Columbia County
+ORUMF,Umatilla NF,Green Ridge,2015-08-13,3.0,Lightning,Dayton,Columbia County
+ORUMF,Umatilla NF,West Butte,2015-08-13,4.0,Lightning,Dayton,Columbia County
+WAOWF,Okan-Wen NF,Lime Belt,2015-08-14,133821.0,Lightning,Okanogan,Okanogan County
+WACOA,Colville Agency,North Star,2015-08-13,218252.0,Human,Republic,Ferry County
+WANES,Washington DNR,Tunk Block,2015-08-14,165924.0,Lightning,Omak,Okanogan County
+WAOWF,Okan-Wen NF,Newby Lake,2015-07-02,5158.0,Lightning,Oliver,
+WAOWF,Okan-Wen NF,Kelly Mountain,2014-07-16,124.0,Lightning,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Duncan,2014-07-16,12695.0,Lightning,Granite Falls,Chelan County
+WASES,Washington DNR,Snag Canyon,2014-08-02,12599.0,Lightning,Ellensburg,Kittitas County
+WASES,Washington DNR,Hansel Creek,2014-08-02,1073.0,Lightning,Leavenworth,Chelan County
+WASPS,Washington DNR,Haven Lake,2014-08-11,183.0,Human,Shelton,Mason County
+WASES,Washington DNR,Wood Gulch,2007-07-13,7666.0,Lightning,Mabton,Yakima County
+WACOF,Colville Forest,Curve Ball,2007-07-13,109.0,Lightning,Grand Forks,
+WACOF,Colville Forest,Windy Ridge,2007-07-13,217.0,Lightning,Fruitvale,
+WANES,Washington DNR,Tripod (Tripod Complex),2006-07-24,113011.0,,Okanogan,Okanogan County
+WASES,Washington DNR,Elk Heights,2004-07-30,296.0,Arson,Cle Elum,Kittitas County
+WAOWF,Okan-Wen NF,Isabel,2003-09-07,4262.0,,Okanogan,Okanogan County
+WAOWF,Okan-Wen NF,Goose Lake,2001-08-13,1282.0,,Okanogan,Okanogan County
+WAOWF,Okan-Wen NF,Thirtymile,2001-07-23,9324.0,,Tonasket,Okanogan County
+WACOA,Colville Agency,Sandhills,2013-08-10,115.85781207,Lightning,Coulee Dam,Okanogan County
+WAWFS,Washington Fire Ser,Colockum Tarps,2013-07-27,81733.2699806,Miscellaneous,South Wenatchee,Chelan County
+WAYAA,BIA - Yakima,Jojo,2013-08-11,4242.96578202,,Granger,Yakima County
+WASES,Washington DNR,Milepost 10,2013-08-09,5443.33991656,Lightning,South Wenatchee,Chelan County
+WASPD,Spokane BLM,Desmarais,2013-06-07,10132.9241537,Missing/Undefined,Zillah,Yakima County
+WASPD,Spokane BLM,Dennis Command,2013-07-04,332.86808962,Miscellaneou,Benton City,Benton County
+WAOWF,Okan-Wen NF,Eagle,2013-08-19,1465.80702223,Miscellaneous,Leavenworth,Chelan County
+WAOWF,Okan-Wen NF,Manastash Ridge,2013-08-20,2351.83258538,Lightning,Cle Elum,Kittitas County

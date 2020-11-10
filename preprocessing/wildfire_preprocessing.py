@@ -1,5 +1,8 @@
 import os
 import pandas as pd
+import geopandas
+import reverse_geocoder
+pd.options.mode.chained_assignment = None
 
 
 def load_data(path):
@@ -26,6 +29,43 @@ def combine_redundant(column):
                    'BURNING MATERIAL', inplace=True)
 
 
+def load_shapefile(path):
+    shapefile = geopandas.read_file(path)
+    return shapefile
+
+
+def convert_crs(file, epsg):
+    if file.crs == 'epsg':
+        return file
+    else:
+        file = file.to_crs(epsg=epsg)
+        return file
+
+
+def add_county(geometry):
+    area = []
+    county = []
+    for shape in geometry:
+        bounds = shape.centroid
+        coordinates = (bounds.y, bounds.x)
+        place = reverse_geocoder.search(coordinates)
+        area.append(place[0]['name'])
+        county.append(place[0]['admin2'])
+    return area, county
+
+
+def merge_fire_shape(fire_data, shapefile):
+    for i in range(len(fire_data['FIRENAME'])):
+        for j in range(len(shapefile['FIRENAME'])):
+            name_flag = str(fire_data['FIRENAME'][i]).upper() == str(shapefile['FIRENAME'][j]).upper()
+            acres_flag = round(fire_data['ACRES'][i], 2) == round(shapefile['ACRES'][j], 2)
+            if name_flag and acres_flag:
+                fire_data['AREA'][i] = shapefile['AREA'][j]
+                fire_data['COUNTY'][i] = shapefile['COUNTY'][j]
+                break
+    return fire_data
+
+
 def main():
     fire_data = load_data(os.path.join(DATA_DIR, 'Washington_Large_Fires_1973-2019.csv'))
     remove_unnecessary_cols(fire_data, ['OBJECTID', 'SHAPEAREA',
@@ -33,6 +73,18 @@ def main():
                                         'PERIMDATE', 'YEAR'])
     fire_data['STARTDATE'] = convert_to_date(fire_data['STARTDATE'])
     combine_redundant(fire_data['CAUSE'])
+
+    shapefile = load_shapefile(os.path.join(DATA_DIR, 'wa_lrg_fires.shp'))
+    shapefile = convert_crs(shapefile, 4326)
+    shapefile['AREA'], shapefile['COUNTY'] = add_county(shapefile.geometry)
+    remove_unnecessary_cols(shapefile, ['SHAPE_AREA',
+                                        'SHAPE_LEN', 'FIRENUM',
+                                        'PERIMDATE', 'YEAR', 'geometry'])
+    shapefile.to_csv(os.path.join(DATA_DIR, 'preprocessed/shapefile.csv'), index=False)
+
+    fire_data['AREA'] = ''
+    fire_data['COUNTY'] = ''
+    fire_data = merge_fire_shape(fire_data, shapefile)
     fire_data.to_csv(os.path.join(DATA_DIR, 'preprocessed/wildfire.csv'), index=False)
 
 

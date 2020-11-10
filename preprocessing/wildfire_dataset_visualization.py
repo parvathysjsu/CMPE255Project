@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def visualize_shape_file():
-    print("--- creating map from shape file ---")
+    print("__________ Shape File Info __________")
     sns.set(style="whitegrid", palette="pastel", color_codes=True)
     sns.mpl.rc("figure", figsize=(10,6))
     #opening the vector map
@@ -18,6 +18,9 @@ def visualize_shape_file():
     print("Dataframe shape: ",df.shape)
     print("Sample Data: ")
     print(df.sample(5))
+    print("Summary:")
+    print(df.describe())  
+    #print(df.groupby('YEAR').size())
     plot_map(sf)
     # y_lim = (1000000,3000000) # latitude
     # x_lim = (1300000,1700000) # longitude
@@ -55,11 +58,34 @@ def plot_map(sf, x_lim = None, y_lim = None, figsize = (11,9)):
         plt.ylim(y_lim) 
     plt.savefig('./../graphs/wildfire_data_map_from_shapefile.png')
 
+def visualize_preprocessed_file():
+    print("__________ Pre-processed File Info __________")
+    filename =  "./../data/preprocessed/wildfire.csv"
+    df = pd.read_csv(filename, encoding='utf-8')   
+    df['YEAR'] =  df.STARTDATE.str[:4]
+    print("Dataframe shape: ",df.shape)
+    print("Sample Data: ")
+    print(df.head(5))
+    print("Summary:")
+    print(df.describe())  
+    print(df.groupby('CAUSE').size())
+    plt_graphs_from_preprocessed_file(df)
+
+def plt_graphs_from_preprocessed_file(df):
+    print("Creating graphs....")
+    # plot data
+    fig, ax = plt.subplots(figsize=(15,7))
+    # use unstack()
+    df.groupby(['YEAR','CAUSE']).count()['ACRES'].unstack().plot(ax=ax)
+    plt.savefig('./../graphs/wildfire_per_cause.png')
+
+    
+
 def main():
     """ Data visualization
     """
     visualize_shape_file()
-   
+    visualize_preprocessed_file()
 
 if __name__ == "__main__":
     main()

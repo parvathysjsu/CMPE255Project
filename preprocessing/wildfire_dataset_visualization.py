@@ -70,6 +70,7 @@ def visualize_preprocessed_file():
     print(df.describe())  
     print(df.groupby('CAUSE').size())
     plt_graphs_from_preprocessed_file(df)
+    graphs_from_preprocessed_file(df)
 
 def plt_graphs_from_preprocessed_file(df):
     print("Creating graphs....")
@@ -77,9 +78,34 @@ def plt_graphs_from_preprocessed_file(df):
     fig, ax = plt.subplots(figsize=(15,7))
     # use unstack()
     df.groupby(['YEAR','CAUSE']).count()['ACRES'].unstack().plot(ax=ax)
-    plt.savefig('./../graphs/wildfire_per_cause.png')
+    plt.savefig('./../graphs/wildfire_per_cause.png')   
 
-    
+def graphs_from_preprocessed_file(df):
+    fig, ax = plt.subplots(figsize=(15,7))
+    df.plot(kind='box', subplots=True, layout=(1,1), sharex=False, sharey=False)
+    plt.savefig('./../graphs/wildfire_boxplot_acres.png')
+
+    fig, ax = plt.subplots(figsize=(15,7))
+    df.hist()
+    plt.savefig('./../graphs/wildfire_hist_acres.png')
+
+    fig, ax = plt.subplots(figsize=(22,15))
+    unique, counts = np.unique(df['CAUSE'].tolist(), return_counts=True)
+    plt.bar(unique, counts, 1)
+    plt.title('Distribution of Causes and number of fires')
+    plt.xlabel('Causes', fontsize=10)
+    plt.ylabel('No of fires')
+    plt.xticks(rotation=90)
+    plt.savefig('./../graphs/wildfire_causes_chart.png')
+
+    fig, ax = plt.subplots(figsize=(15,7))
+    unique, counts = np.unique(df['YEAR'].tolist(), return_counts=True)
+    plt.plot(unique, counts, 1)
+    plt.title('Timeline of Fires')
+    plt.xlabel('YEAR')
+    plt.ylabel('FIRES COUNT')
+    plt.xticks(rotation=90)
+    plt.savefig('./../graphs/wildfire_year_wise_chart.png')
 
 def main():
     """ Data visualization

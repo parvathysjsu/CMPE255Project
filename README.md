@@ -30,6 +30,13 @@ This is seen in figure (1).
  </table>
 
 2. From figure (2) we observe that major known cause of wildfires in the Washington state is mostly **Lightening**
+<br>
+<img src="graphs/wildfire_county_wise_chart.png" />
+<img src="graphs/wildfire_data_map_from_shapefile.png"  />
+<img src="graphs/wildfire_boxplot_acres.png"  width=300 height=300/>
+<img src="graphs/wildfire_hist_acres.png"  width=300 height=300/>
+<img src="graphs/wildfire_per_cause.png" />
+<img src="graphs/wildfire_year_wise_chart.png" />
 
 The process of cleaning the data involved - 
 1. Removing unnecessary columns, combining redundant values (eg - 'human' and 'adult') and

@@ -16,7 +16,7 @@ Source : https://w2.weather.gov/climate/xmacis.php?wfo=sew
 Washington Geospatial open Data Portal  
 Analysing the above dataset we observe that -   
 1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019.
-This is seen in figure (1).  
+This is seen in figure (1).
 
 <table>
   <tr>
@@ -47,5 +47,18 @@ The CNN model will learn a function to map the sequence of input observations th
 and temperature datasets to predict the occurrence of wildfire in a given region. The CNN models are known for 
 generating a good estimated predictive accuracy. Below figure shows a simple CNN model.
 
-<img src="graphs/model_images/cnn.png" width=500 height=300>
+2. Logistic regression  
+This model helps in predicting the probability of the event's success or failure. The major limitation of
+this method is the assumption of linearity between input and output variables. 
 
+<img src="" width=500 height=300>    
+<table>
+  <tr>
+    <td>CNN model</td>
+    <td>Logistic regression</td>
+  </tr>
+  <tr>
+    <td><img src="graphs/model_images/cnn.png" width=300 height=300></td>
+    <td><img src="graphs/model_images/logistic.png" width=300 height=300></td>
+  </tr>
+ </table>

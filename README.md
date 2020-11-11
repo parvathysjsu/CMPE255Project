@@ -16,11 +16,20 @@ Source : https://w2.weather.gov/climate/xmacis.php?wfo=sew
 Washington Geospatial open Data Portal  
 Analysing the above dataset we observe that -   
 1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019.
-This is seen in figure 1.  
+This is seen in figure (1).  
 
-![Figure 1](graphs/No_Of_Fires_over_the years.png) ![Figure 2](graphs/wildfire_causes_chart.png) 
+<table>
+  <tr>
+    <td>Figure (1)</td>
+     <td>Figure (2)</td>
+  </tr>
+  <tr>
+    <td><img src="graphs/No_Of_Fires_over_the years.png" width=300 height=300></td>
+    <td><img src="graphs/wildfire_causes_chart.png" width=300 height=300></td>
+  </tr>
+ </table>
 
-2. From figure 2 we observe that major known cause of wildfires in the Washington state is mostly **Lightening**
+2. From figure (2) we observe that major known cause of wildfires in the Washington state is mostly **Lightening**
 
 The process of cleaning the data involved - 
 1. Removing unnecessary columns, combining redundant values (eg - 'human' and 'adult') and
@@ -38,6 +47,5 @@ The CNN model will learn a function to map the sequence of input observations th
 and temperature datasets to predict the occurrence of wildfire in a given region. The CNN models are known for 
 generating a good estimated predictive accuracy. Below figure shows a simple CNN model.
 
-![CNN model](graphs/model_images/cnn.png)
-
+<img src="graphs/model_images/cnn.png" width=500 height=300>
 

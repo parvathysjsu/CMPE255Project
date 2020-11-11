@@ -51,14 +51,13 @@ generating a good estimated predictive accuracy. Below figure shows a simple CNN
 This model helps in predicting the probability of the event's success or failure. The major limitation of
 this method is the assumption of linearity between input and output variables. 
 
-<img src="" width=500 height=300>    
 <table>
   <tr>
     <td>CNN model</td>
     <td>Logistic regression</td>
   </tr>
   <tr>
-    <td><img src="graphs/model_images/cnn.png" width=300 height=300></td>
-    <td><img src="graphs/model_images/logistic.png" width=300 height=300></td>
+    <td><img src="graphs/model_images/cnn.png" width=400 height=300></td>
+    <td><img src="graphs/model_images/logistic.png" width=400 height=300></td>
   </tr>
  </table>

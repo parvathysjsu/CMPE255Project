@@ -107,6 +107,17 @@ def graphs_from_preprocessed_file(df):
     plt.xticks(rotation=90)
     plt.savefig('./../graphs/wildfire_year_wise_chart.png')
 
+    fig, ax = plt.subplots(figsize=(15,7))
+    county_list= df['COUNTY'].tolist()
+    print(county_list)
+    unique, counts = np.unique(county_list, return_counts=True)
+    plt.plot(unique, counts, 1)
+    plt.title('County-wise Fires')
+    plt.xlabel('COUNTY', fontsize=10)
+    plt.ylabel('FIRES')
+    plt.xticks(rotation=90)
+    plt.savefig('./../graphs/wildfire_county_wise_chart.png')    
+
 def main():
     """ Data visualization
     """

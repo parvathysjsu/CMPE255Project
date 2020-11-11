@@ -49,6 +49,9 @@ def add_county(geometry):
         bounds = shape.centroid
         coordinates = (bounds.y, bounds.x)
         place = reverse_geocoder.search(coordinates)
+        if place[0]['admin2'] == '':
+            coordinates = (bounds.y - 0.2, bounds.x)
+            place = reverse_geocoder.search(coordinates)
         area.append(place[0]['name'])
         county.append(place[0]['admin2'])
     return area, county
@@ -58,11 +61,16 @@ def merge_fire_shape(fire_data, shapefile):
     for i in range(len(fire_data['FIRENAME'])):
         for j in range(len(shapefile['FIRENAME'])):
             name_flag = str(fire_data['FIRENAME'][i]).upper() == str(shapefile['FIRENAME'][j]).upper()
-            acres_flag = round(fire_data['ACRES'][i], 2) == round(shapefile['ACRES'][j], 2)
-            if name_flag and acres_flag:
+            if name_flag:
                 fire_data['AREA'][i] = shapefile['AREA'][j]
                 fire_data['COUNTY'][i] = shapefile['COUNTY'][j]
                 break
+        if fire_data['AREA'][i] == '':
+            for j in range(len(shapefile['FIRENAME'])):
+                if str(fire_data['UNITID'][i]).upper() == str(shapefile['UNITID'][j]).upper():
+                    fire_data['AREA'][i] = shapefile['AREA'][j]
+                    fire_data['COUNTY'][i] = shapefile['COUNTY'][j]
+                    break
     return fire_data
 
 

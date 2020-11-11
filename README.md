@@ -12,6 +12,11 @@ Source : https://geo.wa.gov/datasets/6f31b076628d4f8ca5a964cbefd2cccc_0/data?geo
 2. Temperature dataset.     
 Source : https://w2.weather.gov/climate/xmacis.php?wfo=sew
 
+## Preliminary Analysis
+Washington Geospatial open Data Portal
+From figure 1 we observe an increasing trend in the occurrence of wildfires over the years from 1973 to 2019.
+2. Fig 
+
 ## Introduction
 The year 2020 wreaked havoc in many states of the USA. Thus through this project, we analyze 
 how the climate changes are worsening the wildfires. The objective is to investigate the 

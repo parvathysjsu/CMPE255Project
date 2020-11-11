@@ -138,7 +138,7 @@ def main():
     shapefile['AREA'], shapefile['COUNTY'] = add_county(shapefile.geometry)
     remove_unnecessary_cols(shapefile, ['SHAPE_AREA',
                                         'SHAPE_LEN', 'FIRENUM',
-                                        'PERIMDATE', 'YEAR', 'geometry'])
+                                        'PERIMDATE', 'YEAR'])
     shapefile.to_csv(os.path.join(DATA_DIR, 'preprocessed/shapefile.csv'), index=False)
 
     fire_data['AREA'] = ''

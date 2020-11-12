@@ -81,16 +81,29 @@ Additional cleaning in Weather Dataset involved:
 * Add latitude coordinates and longitude coordinates for each station.
 * Update the date attribute to the format of Python Time Object for better comparison.
 
+The following pictures show examples of weather dataset.
+
+<img src="graphs/weather_example1.png" />
+<img src="graphs/weather_example2.png" />
+
 Additional cleaning in Wildfire Dataset involved:
 * Add Attribute "Centroid," which is calculated based on the geometry polygon given by the geojson file.
 * Add Attribute "nearest Station." Euclidean distance is used to calculate the nearest weather station where the wildfire happens. This attribute contains the longitude and latitude coordinate of the station.
 * Update the date attribute to the format of Python Time Object for better comparison.
 
+The following picture shows the added attribute.
+
+<img src="graphs/wild_fire_example.png" />
 
 Steps of merging the two dataset
 * First, additional cleaning would be performed on the two datasets.
 * Second, each wildfire record would map to rows of weather data based on the nearest station. The rows of weather data would be the range of the date that the wildfire is happening.
 * Finally, the average value of the weather data would be calculated and add to the wildfire dataset.
+
+The following pictures show the merge dataset.
+
+<img src="graphs/merge_data_example1.png" />
+<img src="graphs/merge_data_example2.png" />
 
 ### Models
 1. Convolution Neural Network      

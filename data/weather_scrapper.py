@@ -1,4 +1,7 @@
 
+# CMPE 255 Team 7 Project
+# Scrappes and filters the temperature data for different stations in Washigton states for date range 2000-01-01 to 2020-10-31
+
 import requests
 import pandas as pd
 import numpy as np
@@ -69,14 +72,14 @@ def fetch_data():
     print("total Deleted")
     print(total_deleted)
     return pd.DataFrame(np.array(data),columns=['date','max_temperature','min_temperature','avg_temperature','departure_temperature','hdd','cdd','percipitation','new_snow','snow_depth','station_id','name','state','uid','remove'])
-    
+
 
 def filter_data(df):
     df.drop(df.loc[df['remove']==True].index, inplace=True)
     df.drop(["remove"],axis=1,inplace=True)
     print(df.head(5))
     return df
-    
+
 
 def main():
     df=fetch_data()

@@ -71,6 +71,26 @@ On comparing both of the following graphs, we can clearly see the positive relat
  
  
 #### Merged dataset  
+In our wildfire dataset, there is no weather information such as temperature, humidity, and precipitation. Thus, we need to merge the weather dataset and the wildfire dataset.
+
+The two datasets would be merged based on the location of the time and the range of the wildfire date. Additional cleaning in the weather dataset and forest dataset is required. The goal is to add new attributes such as max_temperature, min_temperature, average_temperature, average_precipitation, average_humid_degree, average_cooling_degreeday into the wildfire dataset.
+
+Additional cleaning in Weather Dataset involved:
+* Remove rows with 'M' values in max_temperature, min_temperature, avg_temperature	departure_temperature, hdd, cdd, and percipitation columns.
+* Remove non-numeric value in the numeric attribute field.
+* Add latitude coordinates and longitude coordinates for each station.
+* Update the date attribute to the format of Python Time Object for better comparison.
+
+Additional cleaning in Wildfire Dataset involved:
+* Add Attribute "Centroid," which is calculated based on the geometry polygon given by the geojson file.
+* Add Attribute "nearest Station." Euclidean distance is used to calculate the nearest weather station where the wildfire happens. This attribute contains the longitude and latitude coordinate of the station.
+* Update the date attribute to the format of Python Time Object for better comparison.
+
+
+Steps of merging the two dataset
+* First, additional cleaning would be performed on the two datasets.
+* Second, each wildfire record would map to rows of weather data based on the nearest station. The rows of weather data would be the range of the date that the wildfire is happening.
+* Finally, the average value of the weather data would be calculated and add to the wildfire dataset.
 
 ### Models
 1. Convolution Neural Network      

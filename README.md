@@ -13,29 +13,27 @@ Source : https://geo.wa.gov/datasets/6f31b076628d4f8ca5a964cbefd2cccc_0/data?geo
 Source : https://w2.weather.gov/climate/xmacis.php?wfo=sew
 
 ## Preliminary Analysis
-Washington Geospatial open Data Portal  
+### Washington Geospatial open Data Portal  
 Analysing the above dataset we observe that -   
 1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019.
-This is seen in figure (1).
-
+This is seen in figure.
+<img src="graphs/No_Of_Fires_over_the years.png" > 
+2. From figure (2) we observe that major known cause of wildfires in the Washington state is mostly **Lightening** This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 
+<img src="graphs/wildfire_causes_chart.png" width=300 height=300>
+3. The graph shows all the wildfires that occured between 1973 and 2019 per its cause. From the graph its evident that for a majority of wildfires, the cause is unknown. For those whose cause is known, lightning is the major cause of wildfires expecially after the year 2000. The next major cause is human and these fires mainly occured after 2013.
+<img src="graphs/wildfire_per_cause.png" />
+4. The figure shows the wildfires per county. Chelan county tops the list with over 100 fires. Its followed by Okanogan county, Spokane county, and Klickitat county all having over 50 fires.
+<img src="graphs/wildfire_county_wise_chart.png" />
+5. The figure shows a map of Washington state with all the areas that had wildfires. This map is constructed using the shape file that had coordinates for the locations.
+<img src="graphs/wildfire_data_map_from_shapefile.png"  />
+6. The figures show the univariate plots of Acres attribute which is the number of acres burnt by the wildfires.
 <table>
   <tr>
-    <td>Figure (1)</td>
-     <td>Figure (2)</td>
-  </tr>
-  <tr>
-    <td><img src="graphs/No_Of_Fires_over_the years.png" width=300 height=300></td>
-    <td><img src="graphs/wildfire_causes_chart.png" width=300 height=300></td>
+    <td><img src="graphs/wildfire_boxplot_acres.png"  width=300 height=300/></td>
+    <td><img src="graphs/wildfire_hist_acres.png"  width=300 height=300/></td>
   </tr>
  </table>
-
-2. From figure (2) we observe that major known cause of wildfires in the Washington state is mostly **Lightening**
-<br>
-<img src="graphs/wildfire_county_wise_chart.png" />
-<img src="graphs/wildfire_data_map_from_shapefile.png"  />
-<img src="graphs/wildfire_boxplot_acres.png"  width=300 height=300/>
-<img src="graphs/wildfire_hist_acres.png"  width=300 height=300/>
-<img src="graphs/wildfire_per_cause.png" />
+7. The figure shows the trend that wildfires has increased over the years. The maximum number was recorded in 2015 with over 70 wildfires.
 <img src="graphs/wildfire_year_wise_chart.png" />
 
 The process of cleaning the data involved - 
@@ -44,9 +42,9 @@ correcting spelling errors
 2. Finding the county and city details from the geospatial shape file.
 3. And finally mapping wildfire data with its corresponding location from the shape file.
 
-Temperature dataset 
+### Temperature dataset 
 
-Merged dataset  
+### Merged dataset  
 
 ### Models
 1. Convolution Neural Network      

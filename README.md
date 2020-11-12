@@ -30,7 +30,7 @@ Analysing the above dataset we observe that -   <br>
 4. The figure shows the wildfires per county. Chelan county tops the list with over 100 fires. Its followed by Okanogan county, Spokane county, and Klickitat county all having over 50 fires.
 <img src="graphs/wildfire_county_wise_chart.png" />
 5. The figure shows a map of Washington state with all the areas that had wildfires. This map is constructed using the shape file that had coordinates for the locations.
-<img src="graphs/wildfire_data_map_from_shapefile.png"  />
+<img src="graphs/wildfires_map.PNG"  />
 6. The figures show the univariate plots of Acres attribute which is the number of acres burnt by the wildfires.
 <table>
   <tr>

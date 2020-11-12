@@ -25,7 +25,7 @@ correcting spelling errors
 Analysing the above dataset we observed that -   <br>
 1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019 as shown in the graph below. The maximum number was recorded in 2015 with over 70 wildfires.
 <img src="graphs/wildfire_year_wise_chart.png" />
-2. From the figure below we observe that major known cause of wildfires in the Washington state is mostly **Lightening**. This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 
+2. From the figure below we observe that major known cause of wildfires in the Washington state is mostly Lightening. This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 
 <img src="graphs/wildfire_causes_chart.png" >
 3. The graph shows all the wildfires that occurred between 1973 and 2019 per its cause. From the graph it is evident that for a majority of wildfires, the cause is unknown. For those whose cause is known, lightning is the major cause of wildfires especially after the year 2000. The next major cause is human and, these fires mainly occurred after 2013.
 <img src="graphs/wildfire_per_cause.png" />

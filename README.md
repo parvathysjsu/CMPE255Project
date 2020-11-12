@@ -13,13 +13,18 @@ Source : https://geo.wa.gov/datasets/6f31b076628d4f8ca5a964cbefd2cccc_0/data?geo
 Source : https://w2.weather.gov/climate/xmacis.php?wfo=sew
 
 ## Preliminary Analysis
-### Washington Geospatial open Data Portal  
+### Washington Geospatial open Data Portal 
+The process of cleaning the data involved - 
+1. Removing unnecessary columns, combining redundant values (eg - 'human' and 'adult') and
+correcting spelling errors
+2. Finding the county and city details from the geospatial shape file.
+3. And finally mapping wildfire data with its corresponding location from the shape file.
+<br>
 Analysing the above dataset we observe that -   
-1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019.
-This is seen in figure.
-<img src="graphs/No_Of_Fires_over_the years.png" > 
-2. From figure (2) we observe that major known cause of wildfires in the Washington state is mostly **Lightening** This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 
-<img src="graphs/wildfire_causes_chart.png" width=300 height=300>
+1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019 as shown in the graph below. The maximum number was recorded in 2015 with over 70 wildfires.
+<img src="graphs/wildfire_year_wise_chart.png" />
+2. From figure below we observe that major known cause of wildfires in the Washington state is mostly **Lightening** This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 
+<img src="graphs/wildfire_causes_chart.png" >
 3. The graph shows all the wildfires that occured between 1973 and 2019 per its cause. From the graph its evident that for a majority of wildfires, the cause is unknown. For those whose cause is known, lightning is the major cause of wildfires expecially after the year 2000. The next major cause is human and these fires mainly occured after 2013.
 <img src="graphs/wildfire_per_cause.png" />
 4. The figure shows the wildfires per county. Chelan county tops the list with over 100 fires. Its followed by Okanogan county, Spokane county, and Klickitat county all having over 50 fires.
@@ -33,14 +38,13 @@ This is seen in figure.
     <td><img src="graphs/wildfire_hist_acres.png"  width=300 height=300/></td>
   </tr>
  </table>
-7. The figure shows the trend that wildfires has increased over the years. The maximum number was recorded in 2015 with over 70 wildfires.
-<img src="graphs/wildfire_year_wise_chart.png" />
+7. Statistics observed from the dataset after preprocessing
+Dataframe shape:  (683, 8)
+Acres: Minimumvakue is 0.3 and the maximum value is 255899.
+Cause: For 394 wildfires, cause is unknown. For 194 wildfires, the cause is lightning, which is also the known cause for the highext number of wildfires. The next highest cause known is human followed by arson.
+County: Chelan county has the maximum number of wildfires. It is followed by Okanogan county, Spokane county, and Klickitat county
+Year: The number of wildfires has increased over the years. Year 2015 had the maximum wildfires.
 
-The process of cleaning the data involved - 
-1. Removing unnecessary columns, combining redundant values (eg - 'human' and 'adult') and
-correcting spelling errors
-2. Finding the county and city details from the geospatial shape file.
-3. And finally mapping wildfire data with its corresponding location from the shape file.
 
 ### Temperature dataset 
 

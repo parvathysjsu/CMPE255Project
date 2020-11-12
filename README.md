@@ -20,7 +20,7 @@ correcting spelling errors
 2. Finding the county and city details from the geospatial shape file.
 3. And finally mapping wildfire data with its corresponding location from the shape file.
 <br>
-Analysing the above dataset we observe that -   
+Analysing the above dataset we observe that -   <br>
 1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019 as shown in the graph below. The maximum number was recorded in 2015 with over 70 wildfires.
 <img src="graphs/wildfire_year_wise_chart.png" />
 2. From figure below we observe that major known cause of wildfires in the Washington state is mostly **Lightening** This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 
@@ -38,12 +38,12 @@ Analysing the above dataset we observe that -
     <td><img src="graphs/wildfire_hist_acres.png"  width=300 height=300/></td>
   </tr>
  </table>
-7. Statistics observed from the dataset after preprocessing
-Dataframe shape:  (683, 8)
-Acres: Minimumvakue is 0.3 and the maximum value is 255899.
-Cause: For 394 wildfires, cause is unknown. For 194 wildfires, the cause is lightning, which is also the known cause for the highext number of wildfires. The next highest cause known is human followed by arson.
-County: Chelan county has the maximum number of wildfires. It is followed by Okanogan county, Spokane county, and Klickitat county
-Year: The number of wildfires has increased over the years. Year 2015 had the maximum wildfires.
+7. Statistics observed from the dataset after preprocessing<br>
+<li> * Dataframe shape:  (683, 8) </li>
+<li> * Acres: Minimumvakue is 0.3 and the maximum value is 255899. </li>
+<li> * Cause: For 394 wildfires, cause is unknown. For 194 wildfires, the cause is lightning, which is also the known cause for the highext number of wildfires. The next highest cause known is human followed by arson. </li>
+<li> * County: Chelan county has the maximum number of wildfires. It is followed by Okanogan county, Spokane county, and Klickitat county </li>
+<li> * Year: The number of wildfires has increased over the years. Year 2015 had the maximum wildfires. </li>
 
 
 ### Temperature dataset 

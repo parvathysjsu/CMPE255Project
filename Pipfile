@@ -9,6 +9,8 @@ verify_ssl = true
 pandas = "*"
 matplotlib = "*"
 requests = "*"
+sklearn = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.8"

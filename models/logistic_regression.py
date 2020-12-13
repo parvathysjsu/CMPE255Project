@@ -4,6 +4,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
+from sklearn.manifold import TSNE
+from sklearn.decomposition import PCA
 import seaborn as sns
 import matplotlib.pyplot as plt
 
@@ -148,6 +150,23 @@ def main():
     X = preprocess_input(X)
     # output data
     y = data.iloc[:, -1]
+
+    # TSNE
+    tsne = TSNE(perplexity=50, random_state=42)
+    tsne_results = tsne.fit_transform(X)
+    data['tsne_one'] = tsne_results[:, 0]
+    data['tsne_two'] = tsne_results[:, 1]
+
+    # PCA
+    # pca = PCA(n_components=2)
+    # pca_result = pca.fit_transform(X)
+    # data['tsne_one'] = pca_result[:, 0]
+    # data['tsne_two'] = pca_result[:, 1]
+
+    plt.clf()
+    sns.scatterplot(x='tsne_one', y='tsne_two',
+                    hue='label', data=data)
+    plt.savefig('../model_visualization/logistic_regression/tsne.png')
     # Split train and test data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     # Logistic regression classifier

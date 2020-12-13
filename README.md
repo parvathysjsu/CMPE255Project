@@ -18,12 +18,17 @@ Description
     run scraping code
     
 ## Preprocessing
-Description
+### Wildfire data
+The wildfire dataset from Washington Geospatial Open Data Portal contains information related to 
+wildfires in Washington state from 1973-2019. The preprocessing is performed by running the below
+code in the project directory 
 
-    run prep code
+    python preprocessing/wildfire_preprocessing.py
     
 ## Models
-Description
+To predict the occurrence of a wildfire given the temperature data, the following models are used.
+### Logistic regression
+The model output can be visualized in model_visualization/logistic_regression
 
-    run model code
+    python models/logistic_regression.py
 

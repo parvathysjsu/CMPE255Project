@@ -12,7 +12,7 @@ Source : https://geo.wa.gov/datasets/6f31b076628d4f8ca5a964cbefd2cccc_0/data?geo
 2. Temperature Dataset.     
 Source : https://w2.weather.gov/climate/xmacis.php?wfo=sew
 
-## Scrape wildfire data
+## Scrape temperature data
 Description
 
     run scraping code
@@ -25,6 +25,11 @@ code in the project directory
 
     python preprocessing/wildfire_preprocessing.py
     
+## Merge wildfire and temperature data
+Line
+
+    code
+
 ## Models
 To predict the occurrence of a wildfire given the temperature data, the following models are used.
 ### Logistic regression

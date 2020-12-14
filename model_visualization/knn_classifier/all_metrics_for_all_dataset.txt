@@ -1,0 +1,315 @@
+=============================================================================================
+All Metrics for different dataset and weight
+=============================================================================================
+Dataset : 1
+=============================================================================================
+-------------------------------- Weight : uniform -----------------------------
+    Weight : uniform
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.70      0.81      0.75       102
+        True       0.79      0.67      0.72       108
+
+    accuracy                           0.74       210
+   macro avg       0.74      0.74      0.74       210
+weighted avg       0.75      0.74      0.74       210
+
+
+ROC AUC SCORE : 0.7401960784313725
+F1 Score : 0.7236180904522612
+Accuracy Score : 0.7380952380952381
+
+
+-------------------------------- Weight : distance -----------------------------
+    Weight : distance
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.77      0.85      0.81       102
+        True       0.85      0.76      0.80       108
+
+    accuracy                           0.80       210
+   macro avg       0.81      0.81      0.80       210
+weighted avg       0.81      0.80      0.80       210
+
+
+ROC AUC SCORE : 0.8061002178649237
+F1 Score : 0.8
+Accuracy Score : 0.8047619047619048
+
+
+=============================================================================================
+Dataset : 2
+=============================================================================================
+-------------------------------- Weight : uniform -----------------------------
+    Weight : uniform
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.82      0.93      0.87       206
+        True       0.82      0.61      0.70       108
+
+    accuracy                           0.82       314
+   macro avg       0.82      0.77      0.79       314
+weighted avg       0.82      0.82      0.81       314
+
+
+ROC AUC SCORE : 0.7715749730312838
+F1 Score : 0.7021276595744681
+Accuracy Score : 0.821656050955414
+
+
+-------------------------------- Weight : distance -----------------------------
+    Weight : distance
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.84      0.96      0.90       206
+        True       0.89      0.66      0.76       108
+
+    accuracy                           0.85       314
+   macro avg       0.86      0.81      0.83       314
+weighted avg       0.86      0.85      0.85       314
+
+
+ROC AUC SCORE : 0.806859043509529
+F1 Score : 0.7553191489361702
+Accuracy Score : 0.8535031847133758
+
+
+=============================================================================================
+Dataset : 4
+=============================================================================================
+-------------------------------- Weight : uniform -----------------------------
+    Weight : uniform
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.88      0.99      0.93       411
+        True       0.94      0.53      0.67       112
+
+    accuracy                           0.89       523
+   macro avg       0.91      0.76      0.80       523
+weighted avg       0.90      0.89      0.88       523
+
+
+ROC AUC SCORE : 0.7585266770941954
+F1 Score : 0.6742857142857144
+Accuracy Score : 0.8910133843212237
+
+
+-------------------------------- Weight : distance -----------------------------
+    Weight : distance
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.90      1.00      0.94       411
+        True       0.98      0.58      0.73       112
+
+    accuracy                           0.91       523
+   macro avg       0.94      0.79      0.84       523
+weighted avg       0.92      0.91      0.90       523
+
+
+ROC AUC SCORE : 0.788962026416406
+F1 Score : 0.7303370786516855
+Accuracy Score : 0.9082217973231358
+
+
+=============================================================================================
+Dataset : 8
+=============================================================================================
+-------------------------------- Weight : uniform -----------------------------
+    Weight : uniform
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.93      0.98      0.96       825
+        True       0.79      0.50      0.61       117
+
+    accuracy                           0.92       942
+   macro avg       0.86      0.74      0.78       942
+weighted avg       0.92      0.92      0.91       942
+
+
+ROC AUC SCORE : 0.7387723387723388
+F1 Score : 0.6105263157894736
+Accuracy Score : 0.921443736730361
+
+
+-------------------------------- Weight : distance -----------------------------
+    Weight : distance
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.94      0.99      0.97       825
+        True       0.89      0.56      0.69       117
+
+    accuracy                           0.94       942
+   macro avg       0.92      0.78      0.83       942
+weighted avg       0.94      0.94      0.93       942
+
+
+ROC AUC SCORE : 0.7772027972027973
+F1 Score : 0.6910994764397906
+Accuracy Score : 0.9373673036093418
+
+
+=============================================================================================
+Dataset : 16
+=============================================================================================
+-------------------------------- Weight : uniform -----------------------------
+    Weight : uniform
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.96      0.99      0.98      1662
+        True       0.79      0.46      0.58       117
+
+    accuracy                           0.96      1779
+   macro avg       0.88      0.73      0.78      1779
+weighted avg       0.95      0.96      0.95      1779
+
+
+ROC AUC SCORE : 0.7265574377487736
+F1 Score : 0.5837837837837837
+Accuracy Score : 0.9567172568858909
+
+
+-------------------------------- Weight : distance -----------------------------
+    Weight : distance
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.97      1.00      0.98      1662
+        True       0.91      0.53      0.67       117
+
+    accuracy                           0.97      1779
+   macro avg       0.94      0.76      0.83      1779
+weighted avg       0.96      0.97      0.96      1779
+
+
+ROC AUC SCORE : 0.7631522108056403
+F1 Score : 0.6702702702702703
+Accuracy Score : 0.9657110736368747
+
+
+=============================================================================================
+Dataset : 32
+=============================================================================================
+-------------------------------- Weight : uniform -----------------------------
+    Weight : uniform
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.98      0.99      0.99      3331
+        True       0.79      0.52      0.63       121
+
+    accuracy                           0.98      3452
+   macro avg       0.89      0.76      0.81      3452
+weighted avg       0.98      0.98      0.98      3452
+
+
+ROC AUC SCORE : 0.7577787922620215
+F1 Score : 0.6268656716417911
+Accuracy Score : 0.9782734646581692
+
+
+-------------------------------- Weight : distance -----------------------------
+    Weight : distance
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.98      1.00      0.99      3331
+        True       0.86      0.54      0.66       121
+
+    accuracy                           0.98      3452
+   macro avg       0.92      0.77      0.82      3452
+weighted avg       0.98      0.98      0.98      3452
+
+
+ROC AUC SCORE : 0.7669438855132477
+F1 Score : 0.6598984771573604
+Accuracy Score : 0.9805909617612978
+
+
+=============================================================================================
+Dataset : 300
+=============================================================================================
+-------------------------------- Weight : uniform -----------------------------
+    Weight : uniform
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       1.00      1.00      1.00     31375
+        True       0.95      0.38      0.55       110
+
+    accuracy                           1.00     31485
+   macro avg       0.98      0.69      0.77     31485
+weighted avg       1.00      1.00      1.00     31485
+
+
+ROC AUC SCORE : 0.6908772183991307
+F1 Score : 0.5454545454545455
+Accuracy Score : 0.9977767190725743
+
+
+-------------------------------- Weight : distance -----------------------------
+    Weight : distance
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       1.00      1.00      1.00     31375
+        True       1.00      0.46      0.63       110
+
+    accuracy                           1.00     31485
+   macro avg       1.00      0.73      0.82     31485
+weighted avg       1.00      1.00      1.00     31485
+
+
+ROC AUC SCORE : 0.7318181818181818
+F1 Score : 0.6335403726708074
+Accuracy Score : 0.9981260917897411
+
+
+=============================================================================================
+Dataset : negative_data_merge_weather_forest
+=============================================================================================
+-------------------------------- Weight : uniform -----------------------------
+    Weight : uniform
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.65      0.81      0.72       102
+        True       0.77      0.58      0.66       108
+
+    accuracy                           0.70       210
+   macro avg       0.71      0.70      0.69       210
+weighted avg       0.71      0.70      0.69       210
+
+
+ROC AUC SCORE : 0.698529411764706
+F1 Score : 0.6631578947368423
+Accuracy Score : 0.6952380952380952
+
+
+-------------------------------- Weight : distance -----------------------------
+    Weight : distance
+    Classfication Report :
+              precision    recall  f1-score   support
+
+       False       0.68      0.81      0.74       102
+        True       0.78      0.64      0.70       108
+
+    accuracy                           0.72       210
+   macro avg       0.73      0.73      0.72       210
+weighted avg       0.73      0.72      0.72       210
+
+
+ROC AUC SCORE : 0.7263071895424836
+F1 Score : 0.7040816326530611
+Accuracy Score : 0.7238095238095238
+
+
+=============================================================================================

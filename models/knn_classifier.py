@@ -16,9 +16,8 @@ from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score
 
 
-data_dir="./data/preprocessed/"
-graph_dir="./model_visualization/knn_classifier/"
-model_save_dir="./trained_models/"
+data_dir="../data/preprocessed/"
+graph_dir="../model_visualization/knn_classifier/"
 
 def remove_unnecessary_cols(fire_data, col_arr):
     """
@@ -145,6 +144,7 @@ def make_correlation_matrix(dataset,data_set_name):
     feature_columns=["max_temperature","min_temperature","avg_temperature","departure_temperature","hdd","cdd","percipitation"]
     plt.clf()
     # Correlation matrix between numerical values
+    plt.figure(figsize=(5,5))
     sns.heatmap(dataset[feature_columns].corr(),annot=True, fmt = ".2f", cmap = "coolwarm")
     plt.savefig('{}{}/correlation_matrix.png'.format(graph_dir,data_set_name))
 
@@ -177,7 +177,6 @@ def io_trend(variable, output, data, data_set_name):
     :return: plot graph showing the relation
     """
     plt.clf()
-    plt.figure(figsize=(15,15))
     sns.regplot(x=variable, y=output, data=data)
     plt.savefig('{}{}/{}_relation.png'.format(graph_dir,data_set_name,variable))
 
@@ -261,19 +260,19 @@ if __name__ == '__main__':
                     "negative_data_merge_weather_forest.csv"]
     new_dict={}
     for data_set_name in list_of_dataset:
-        temp=data_set_name
-        new_dict[temp.replace(".csv","")]=main(data_set_name)
+        temp = data_set_name
+        new_dict[temp.replace(".csv","")] = main(data_set_name)
 
     print("=============================================================================================")
     print("All Metrics for different dataset and weight")
     print("=============================================================================================")
     for data_set_name in list_of_dataset:
-        temp=data_set_name.replace(".csv","")
+        temp = data_set_name.replace(".csv","")
         print(f"Dataset : {temp}")
         print("=============================================================================================")
-        all_metrics=new_dict[temp]
+        all_metrics = new_dict[temp]
         for metrics in all_metrics:
-            print("-------------------------------- Weight : {} -----------------------------".format(metrics["weight"]))
+            print("--------------------------------------- Weight : {} ------------------------------------".format(metrics["weight"]))
             print("    Weight : {}".format(metrics["weight"]))
             print("    Classfication Report :")
             print(metrics["classification_report"])
@@ -284,4 +283,3 @@ if __name__ == '__main__':
             print()
             print()
         print("=============================================================================================")
-    

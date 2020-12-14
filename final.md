@@ -63,7 +63,20 @@ the input features - max_temperature and precipitation - with the output data is
  temperature increases the probability of the wildfire occurrence is high. And precipitation has a negative
  relation - the lower the precipitation value in the region, the higher the probability of wildfire occurrence.
 
+### Data Ratios
+
 ## Comparisons
+### Decision Trees
+
+Dataset Data Ratio | Accuracy | Confusion Matrix
+------------ | ------------- | -------------
+1:1 | 88.1% | <img src="model_visualization/decision_tree/confusion_matrix.png" />
+1:2 | 92.04% | <img src="model_visualization/decision_tree/confusion_matrix_2.png" />
+1:4 | 94.07% | <img src="model_visualization/decision_tree/confusion_matrix_4.png" />
+1:8 | 95.22% | <img src="model_visualization/decision_tree/confusion_matrix_8.png" />
+1:16 | 97.75% | <img src="model_visualization/decision_tree/confusion_matrix_16.png" />
+1:32 | 98.75% | <img src="model_visualization/decision_tree/confusion_matrix_32.png" />
+1:300 | 99.89% | <img src="model_visualization/decision_tree/confusion_matrix_300.png" />
 
 ## Conclusion
 

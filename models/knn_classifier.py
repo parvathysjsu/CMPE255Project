@@ -8,6 +8,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from joblib import dump
+# import for metrics
+
+from sklearn.metrics import classification_report
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import f1_score
+from sklearn.metrics import accuracy_score
 
 
 data_dir="./data/preprocessed/"
@@ -43,7 +49,6 @@ def preprocess_input(X):
     X['start'] = X['start'].map(datetime.datetime.toordinal)
     X = pd.get_dummies(X)
     return X
-
 
 def make_confusion_matrix(cf, categories,
                           group_names=None,
@@ -135,19 +140,35 @@ def make_confusion_matrix(cf, categories,
     if title:
         plt.title(title)
 
-def make_correlation_matrix(dataset):
+def make_correlation_matrix(dataset,data_set_name):
     # Identify features Columns
     feature_columns=["max_temperature","min_temperature","avg_temperature","departure_temperature","hdd","cdd","percipitation"]
     plt.clf()
     # Correlation matrix between numerical values
     sns.heatmap(dataset[feature_columns].corr(),annot=True, fmt = ".2f", cmap = "coolwarm")
-    plt.savefig('{}correlation_matrix.png'.format(graph_dir))
+    plt.savefig('{}{}/correlation_matrix.png'.format(graph_dir,data_set_name))
 
-def save_model(clf,model_name):
+
+def save_model(clf,weight,model_name,):
     print(f"Saving model {model_name}")
-    dump(clf, '{}{}.joblib'.format(model_save_dir,model_name))
+    dump(clf, '{}{}/{}/trained_model.joblib'.format(graph_dir,model_name,weight))
 
-def io_trend(variable, output, data):
+def calculate_metrics(Y_test,predicted_y):
+    print("Calculating metrics...")
+    new_dict={}
+    new_dict["classification_report"]=classification_report(Y_test,predicted_y)
+    ROC_SOCRE=roc_auc_score(Y_test, predicted_y)
+    new_dict["roc_auc_score"]=ROC_SOCRE
+    F1_SCORE=f1_score(Y_test, predicted_y)
+    new_dict["f1_score"]=F1_SCORE
+    ACC_SCORE=accuracy_score(Y_test, predicted_y)
+    new_dict["accuracy_score"]=ACC_SCORE
+    print("roc_auc_score: ", ROC_SOCRE)
+    print("f1 score: ", F1_SCORE)
+    print("accuracy score: ", ACC_SCORE)
+    return new_dict
+
+def io_trend(variable, output, data, data_set_name):
     """
     Identify positive or negative relation with the output label
     :param variable: input variable
@@ -158,18 +179,21 @@ def io_trend(variable, output, data):
     plt.clf()
     plt.figure(figsize=(15,15))
     sns.regplot(x=variable, y=output, data=data)
-    plt.savefig('{}{}_relation.png'.format(graph_dir,variable))
+    plt.savefig('{}{}/{}_relation.png'.format(graph_dir,data_set_name,variable))
 
 
-def main():
-    data_file_name = 'negative_data_merge_weather_forest.csv'
+def main(data_file_name):
+    # data_file_name = 'negative_data_merge_weather_forest.csv'
     print('Loading data...')
+
     data = load_data(data_file_name)
+    data_set_name = data_file_name.replace(".csv","")
+    print (data_set_name)
     # Plot relation between input and output variables
     print('Plot relations...')
-    io_trend('max_temperature', 'label', data)
-    io_trend('percipitation', 'label', data)
-    make_correlation_matrix(data)
+    io_trend('max_temperature', 'label', data, data_set_name)
+    io_trend('percipitation', 'label', data, data_set_name)
+    make_correlation_matrix(data,data_set_name)
     # input data
 
     # X = data.iloc[:, 4:-1]
@@ -191,7 +215,7 @@ def main():
 
     n_neighbors=5
     
-
+    all_metrics=[]
     for weights in ["uniform","distance"]:
         clf = KNeighborsClassifier(n_neighbors=n_neighbors,weights=weights)
         clf.fit(X_train, y_train)
@@ -200,7 +224,7 @@ def main():
         prediction = clf.predict(X_test)
         print(f'Plot confusion matrix for {weights} uniform...')
         corr = confusion_matrix(y_test, prediction)
-        plt.savefig('{}{}_weight_confusion_matrix.png'.format(graph_dir,weights), bbox_inches='tight')
+        plt.savefig('{}{}/{}_weight/confusion_matrix.png'.format(graph_dir,data_set_name,weights), bbox_inches='tight')
         plt.figure()
         make_confusion_matrix(corr,
                             categories=['YES', 'NO'],
@@ -218,9 +242,46 @@ def main():
         b += 0.5  # Add 0.5 to the bottom
         t -= 0.5  # Subtract 0.5 from the top
         plt.ylim(b, t)  # update the ylim(bottom, top) values
-        plt.savefig('{}{}_weight_confusion_matrix.png'.format(graph_dir,weights), bbox_inches='tight')
-        save_model(clf,'{}_{}'.format(weights,"knn_classifier"))
+        plt.savefig('{}{}/{}_weight/confusion_matrix.png'.format(graph_dir,data_set_name,weights), bbox_inches='tight')
+        metrics = calculate_metrics(y_test,prediction)
+        metrics["weight"]=weights
+        all_metrics.append(metrics)
+        save_model(clf,f"{weights}_weight",data_set_name)
+    return all_metrics
 
 
 if __name__ == '__main__':
-    main()
+    list_of_dataset=["1.csv",
+                    "2.csv",
+                    "4.csv",
+                    "8.csv",
+                    "16.csv",
+                    "32.csv",
+                    "300.csv",
+                    "negative_data_merge_weather_forest.csv"]
+    new_dict={}
+    for data_set_name in list_of_dataset:
+        temp=data_set_name
+        new_dict[temp.replace(".csv","")]=main(data_set_name)
+
+    print("=============================================================================================")
+    print("All Metrics for different dataset and weight")
+    print("=============================================================================================")
+    for data_set_name in list_of_dataset:
+        temp=data_set_name.replace(".csv","")
+        print(f"Dataset : {temp}")
+        print("=============================================================================================")
+        all_metrics=new_dict[temp]
+        for metrics in all_metrics:
+            print("-------------------------------- Weight : {} -----------------------------".format(metrics["weight"]))
+            print("    Weight : {}".format(metrics["weight"]))
+            print("    Classfication Report :")
+            print(metrics["classification_report"])
+            print()
+            print("ROC AUC SCORE : {}".format(metrics["roc_auc_score"]))
+            print("F1 Score : {}".format(metrics["f1_score"]))
+            print("Accuracy Score : {}".format(metrics["accuracy_score"]))
+            print()
+            print()
+        print("=============================================================================================")
+    

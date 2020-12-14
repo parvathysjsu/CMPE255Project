@@ -7,9 +7,21 @@ from sklearn.metrics import confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
+from joblib import dump
+
 
 data_dir="./data/preprocessed/"
 graph_dir="./model_visualization/knn_classifier/"
+model_save_dir="./trained_models/"
+
+def remove_unnecessary_cols(fire_data, col_arr):
+    """
+    remove unnecessary columns from the dataframe
+    :param fire_data: given dataframe
+    :param col_arr: array of columns to remove
+    """
+    for col in col_arr:
+        fire_data.drop(col, axis=1, inplace=True)
 
 def load_data(filename):
     """
@@ -25,7 +37,8 @@ def preprocess_input(X):
     :param X: input data to preprocess
     :return: processed data
     """
-    X.drop(columns=['end'], inplace=True)
+    remove_unnecessary_cols(X, ['end','departure_temperature'])
+    # X.drop(columns=['end'], inplace=True)
     X['start'] = pd.to_datetime(X['start'])
     X['start'] = X['start'].map(datetime.datetime.toordinal)
     X = pd.get_dummies(X)
@@ -122,6 +135,17 @@ def make_confusion_matrix(cf, categories,
     if title:
         plt.title(title)
 
+def make_correlation_matrix(dataset):
+    # Identify features Columns
+    feature_columns=["max_temperature","min_temperature","avg_temperature","departure_temperature","hdd","cdd","percipitation"]
+    plt.clf()
+    # Correlation matrix between numerical values
+    sns.heatmap(dataset[feature_columns].corr(),annot=True, fmt = ".2f", cmap = "coolwarm")
+    plt.savefig('{}correlation_matrix.png'.format(graph_dir))
+
+def save_model(clf,model_name):
+    print(f"Saving model {model_name}")
+    dump(clf, '{}{}.joblib'.format(model_save_dir,model_name))
 
 def io_trend(variable, output, data):
     """
@@ -132,6 +156,7 @@ def io_trend(variable, output, data):
     :return: plot graph showing the relation
     """
     plt.clf()
+    plt.figure(figsize=(15,15))
     sns.regplot(x=variable, y=output, data=data)
     plt.savefig('{}{}_relation.png'.format(graph_dir,variable))
 
@@ -144,8 +169,11 @@ def main():
     print('Plot relations...')
     io_trend('max_temperature', 'label', data)
     io_trend('percipitation', 'label', data)
+    make_correlation_matrix(data)
     # input data
-    X = data.iloc[:, 4:-1]
+
+    # X = data.iloc[:, 4:-1]
+    X = data.iloc[:, 8:-1]
     X = preprocess_input(X)
     # output data
     y = data.iloc[:, -1]
@@ -191,6 +219,7 @@ def main():
         t -= 0.5  # Subtract 0.5 from the top
         plt.ylim(b, t)  # update the ylim(bottom, top) values
         plt.savefig('{}{}_weight_confusion_matrix.png'.format(graph_dir,weights), bbox_inches='tight')
+        save_model(clf,'{}_{}'.format(weights,"knn_classifier"))
 
 
 if __name__ == '__main__':

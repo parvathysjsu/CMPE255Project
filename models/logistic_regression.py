@@ -5,9 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 from sklearn.manifold import TSNE
-from sklearn.decomposition import PCA
 import seaborn as sns
 import matplotlib.pyplot as plt
+from preprocessing.wildfire_preprocessing import remove_unnecessary_cols
 
 
 def load_model(path):
@@ -26,10 +26,10 @@ def preprocess_input(X):
     :param X: input data to preprocess
     :return: processed data
     """
-    X.drop(columns=['end'], inplace=True)
+    remove_unnecessary_cols(X, ['end',
+                                'departure_temperature'])
     X['start'] = pd.to_datetime(X['start'])
     X['start'] = X['start'].map(datetime.datetime.toordinal)
-    X = pd.get_dummies(X)
     return X
 
 
@@ -138,46 +138,47 @@ def io_trend(variable, output, data):
 
 
 def main():
-    DATA_FILE = '../data/preprocessed/negative_data_merge_weather_forest.csv'
+    DATA_FILE = '../data/preprocessed/1.csv'
     print('Loading data...')
     data = load_model(DATA_FILE)
+
     # Plot relation between input and output variables
     print('Plot relations...')
     io_trend('max_temperature', 'label', data)
     io_trend('percipitation', 'label', data)
+
     # input data
-    X = data.iloc[:, 4:-1]
+    X = data.iloc[:, 8:-1]
     X = preprocess_input(X)
     # output data
     y = data.iloc[:, -1]
 
     # TSNE
-    tsne = TSNE(perplexity=50, random_state=42)
+    print('Plotting TSNE...')
+    tsne = TSNE(perplexity=50)
     tsne_results = tsne.fit_transform(X)
     data['tsne_one'] = tsne_results[:, 0]
     data['tsne_two'] = tsne_results[:, 1]
-
-    # PCA
-    # pca = PCA(n_components=2)
-    # pca_result = pca.fit_transform(X)
-    # data['tsne_one'] = pca_result[:, 0]
-    # data['tsne_two'] = pca_result[:, 1]
-
     plt.clf()
     sns.scatterplot(x='tsne_one', y='tsne_two',
                     hue='label', data=data)
     plt.savefig('../model_visualization/logistic_regression/tsne.png')
+
     # Split train and test data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
     # Logistic regression classifier
     print('Classify data...')
     clf = LogisticRegression(random_state=0).fit(X_train, y_train)
     prediction = clf.predict(X_test)
+    print('Train set accuracy = {:0.2f}%'.format(clf.score(X_train, y_train)*100))
+    print('Test set accuracy = {:0.2f}%'.format(clf.score(X_test, y_test)*100))
     print('Plot confusion matrix...')
     corr = confusion_matrix(y_test, prediction)
+
     # plot confusion matrix
     make_confusion_matrix(corr,
-                          categories=['YES', 'NO'],
+                          categories=['NO', 'YES'],
                           count=True,
                           percent=True,
                           color_bar=False,

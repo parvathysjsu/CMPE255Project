@@ -7,7 +7,10 @@ from sklearn.metrics import confusion_matrix
 from sklearn.manifold import TSNE
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import GridSearchCV
 from preprocessing.wildfire_preprocessing import remove_unnecessary_cols
+from models.knn_classifier import calculate_metrics
 
 
 def load_model(path):
@@ -150,12 +153,14 @@ def main():
     # input data
     X = data.iloc[:, 8:-1]
     X = preprocess_input(X)
+    sc = StandardScaler()
+    X = sc.fit_transform(X)
     # output data
     y = data.iloc[:, -1]
 
     # TSNE
     print('Plotting TSNE...')
-    tsne = TSNE(perplexity=50)
+    tsne = TSNE(perplexity=30)
     tsne_results = tsne.fit_transform(X)
     data['tsne_one'] = tsne_results[:, 0]
     data['tsne_two'] = tsne_results[:, 1]
@@ -167,15 +172,27 @@ def main():
     # Split train and test data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+    #GridSearchCV
+    # print('Hyperparameter search...')
+    # grid = {"C": np.logspace(-3, 3, 7),
+    #         'solver': ['liblinear', 'lbfgs', 'newton-cg'],
+    #         'penalty': ['l2']}
+    # clf = LogisticRegression(random_state=0)
+    # clf_cv = GridSearchCV(clf, grid)
+    # clf_cv.fit(X_train, y_train)
+    # print("tuned hpyerparameters :(best parameters) ", clf_cv.best_params_)
+    # print("accuracy :", clf_cv.best_score_)
+
     # Logistic regression classifier
     print('Classify data...')
-    clf = LogisticRegression(random_state=0).fit(X_train, y_train)
+    clf = LogisticRegression(random_state=0, C=10, penalty='l2', solver='liblinear').fit(X_train, y_train)
     prediction = clf.predict(X_test)
     print('Train set accuracy = {:0.2f}%'.format(clf.score(X_train, y_train)*100))
     print('Test set accuracy = {:0.2f}%'.format(clf.score(X_test, y_test)*100))
+    calculate_metrics(y_test, prediction)
+
     print('Plot confusion matrix...')
     corr = confusion_matrix(y_test, prediction)
-
     # plot confusion matrix
     make_confusion_matrix(corr,
                           categories=['NO', 'YES'],
@@ -187,7 +204,7 @@ def main():
                           sum_stats=True,
                           fig_size=(8, 6),
                           c_map='OrRd',
-                          title='Wildfire Occurrence')
+                          title='Confusion matrix for Wildfire Occurrence')
     # error correction - cropped heat map
     b, t = plt.ylim()  # discover the values for bottom and top
     b += 0.5  # Add 0.5 to the bottom

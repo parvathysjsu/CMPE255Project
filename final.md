@@ -196,11 +196,11 @@ The results of the above experiments are recorded in the table below
 </table>
 The confusion matrix of the final model is given by - 
 
-<img src="model_visualization/logistic_regression/confusion_matrix.png" width=400 height=400/>
+<img src="model_visualization/logistic_regression/confusion_matrix.png" />
 
 The t-SNE plot of the dataset is shown below.
 
-<img src="model_visualization/logistic_regression/tsne.png" width=400 height=300/>
+<img src="model_visualization/logistic_regression/tsne.png" />
 
 From the t-SNE plot, we observe that the data is not easily separable. Therefore, we need a more sophisticated
 model to classify the occurrence of wildfire.

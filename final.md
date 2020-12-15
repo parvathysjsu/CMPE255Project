@@ -61,7 +61,27 @@ Analysing the wildfire dataset we observed that -   <br>
 
 
 ### Scraping, preprocessing and analysis of temperature dataset
-#### Salman Mal
+
+To analyse the correlation between these wildfires and weather, we extracted past 20 years weather data from https://w2.weather.gov for all the weather stations in Washington state using our [wather_scrapper.py](data/weather_scrapper.py) script. 
+
+The process of extracting and cleaning the data involved -
+
+* Understanding the REST API request body and finding washington state's weather station ids.
+* Removed records which had missing values of temperature, precipitation and other attributes.
+* Append station ids and station name to later identify county and city, which will eventually help in merging the wildfire and weather data.
+* Saved as [weather_data.csv](data/weather_data.csv) to later analyse and merge with wildfire dataset.
+
+Analysing the temperature dataset we observed that -
+*  The following mean temperature over the years graph shows the history of average temperature over the last 20 years period. From the data it is evident that there is a rise in average temperature over this period with some fluctuation. Between the period 2011 to 2015 temperature had a steep rise from 55 °F to 62 °F.
+On comparing both of the following graphs, we can clearly see the positive relation between temperature and number of wildfires in that year. Year 2015 had the record breaking average temperature of 62 °F and maximum number of wildfires.
+ 
+ <img src="graphs/avg_temp_over_the_years.png" />
+ <img src="graphs/wildfire_year_wise_chart.png" />
+ 
+*  The following graph shows the max temperature over the years. The max temperature over the period has risen from 96 °F to 105 °F. The spike at year 2007 lies way beyond the normal distance from the others and could easily be identified as outlier. To reduce such misleading sample, instead of taking max from the year, in training the model we decided to take average of first 10 max values for that year.
+ 
+ <img src="graphs/max_temp_over_the_years.png" />
+ 
 
 ### Merging the wildfire and temperature dataset
 #### Steven
@@ -140,6 +160,7 @@ From the t-SNE plot, we observe that the data is not easily separable. Therefore
 model to classify the occurrence of wildfire.
 
 #### 2. KNN
+Salman Mal
 
 #### 3. SVM
 

@@ -287,12 +287,15 @@ Below are the consolidated performance of different models.
  </table>
 
 ## Conclusion
-From the above experiments, Decision Tree best identifies the occurrence of
-wildfire with accuracy of 94.07% and F1 score of 0.86 
+From the above experiments, we found out that the given dataset does not need a complicated model.
+Our data does not have high dimensions because we only have seven useful attributes.
+We add different negative data to test how the model can handle an unbalance situation when there are more negative data than positive data.
+Overall, the decision tree is the best model because it identifies the occurrence of wildfire with an accuracy of 94.07% and an F1 score of 0.86. 
+Even in extremely unbalanced situations (the ratio of positive to negative data is 1:300), the decision tree model still performs well with a high F1 score of 0.79.
 
 ## Future Recommendations
-There is scope for improving the performance of classification model with the help of - 
-1. Availability of more wildfire data - This can promote the use of complex deep learning model to achieve exemplary
+There are scopes for improving the performance of the classification model with the help of - 
+1. Availability of more wildfire data - This can promote the use of a complex deep learning model to achieve exemplary
 performance
 2. Addition of input weather features, so to achieve a more separable cluster. 
 

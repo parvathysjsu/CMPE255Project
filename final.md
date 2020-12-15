@@ -41,10 +41,12 @@ the common feature firename.
 ### Analysis/visualization of wildfire dataset
 
 ### Scraping, preprocessing and analysis of temperature dataset
-
+#### Salman Mal
 ### Merging the wildfire and temperature dataset
-
+#### Steven
+#### Data Ratios(Steven)
 ### Analysis of merged data
+#### Salman Mal (Correlation Matrix)
 The objective of the classification model is to predict the occurrence of wildfire given the weather details of
 the region. The input features include - temperatures (min, max, hdd and cdd) and precipitation. The relation between
 the input features - max_temperature and precipitation - with the output data is shown below - 
@@ -62,10 +64,14 @@ the input features - max_temperature and precipitation - with the output data is
  From the figure we see that the temperature has positive relation with the occurrence of wildfire i.e. as the
  temperature increases the probability of the wildfire occurrence is high. And precipitation has a negative
  relation - the lower the precipitation value in the region, the higher the probability of wildfire occurrence.
+## Classification Models
 
-### Data Ratios
+### Logistic Regression
 
-## Comparisons
+### KNN Classifier
+
+### SVM 
+
 ### Decision Trees
 
 Dataset Data Ratio | Accuracy | Confusion Matrix
@@ -77,6 +83,6 @@ Dataset Data Ratio | Accuracy | Confusion Matrix
 1:16 | 97.75% | <img src="model_visualization/decision_tree/confusion_matrix_16.png" />
 1:32 | 98.75% | <img src="model_visualization/decision_tree/confusion_matrix_32.png" />
 1:300 | 99.89% | <img src="model_visualization/decision_tree/confusion_matrix_300.png" />
-
+## Comparisons
 ## Conclusion
 

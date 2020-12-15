@@ -196,11 +196,11 @@ The results of the above experiments are recorded in the table below
 </table>
 The confusion matrix of the final model is given by - 
 
-<img src="model_visualization/logistic_regression/confusion_matrix.png" />
+<img src="model_visualization/logistic_regression/confusion_matrix.png"  width=400 height=300/>
 
 The t-SNE plot of the dataset is shown below.
 
-<img src="model_visualization/logistic_regression/tsne.png" />
+<img src="model_visualization/logistic_regression/tsne.png" width=400 height=300/ />
 
 From the t-SNE plot, we observe that the data is not easily separable. Therefore, we need a more sophisticated
 model to classify the occurrence of wildfire.
@@ -217,7 +217,7 @@ The default SVM model is running on the kernel "rbf". Different ratios of the da
 The result shows a reasonable accuracy, ROC, and F1 score when the negative ratio is low. However, as more negative data added, the F1 score decrease fast.
 The default SVM model even reaches an F1 score = 0 when the ratio of pos to neg is 300. 
 
-<img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/attribute_comparison.png" width=400 height=300/>
+<img src="graphs/attribute_comparison.png"/>
 
 Notice that by adding more negative data, the dataset would become more unbalanced. 
 In wildfire detection, it is more important to correctly label an occurrence as wildfire, as opposed to labeling the non-wildfire one. 
@@ -226,7 +226,7 @@ The training result shows that using four attributes receive a better F1 score t
 
 Later then, using only four attributes, multiple SVM kernels such as 'rbf', 'linear', and 'sigmoid' are trained and compared with each other.
 
-<img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/svm_model.png" width=400 height=300/>
+<img src="graphs/svm_model.png" />
 
 As the graph above shown, the accuracy increases as more negative data was added.
 Conversely, the F1 score decreases as more negative data were added.

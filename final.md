@@ -136,7 +136,6 @@ The negative data are added by randomly choosing other days that do not have wil
 The left graph above represents one of the positive data. The right graph represents the added negative data, which is a randomly chosen day from the weather dataset with the same lattitude and longtitude information.
 
 ### Analysis of merged data
-#### Salman Mal (Correlation Matrix)
 The objective of the classification model is to predict the occurrence of wildfire given the weather details of
 the region. The input features include - temperatures (min, max, hdd and cdd) and precipitation. The relation between
 the input features - max_temperature and precipitation - with the output data is shown below - 
@@ -154,6 +153,43 @@ the input features - max_temperature and precipitation - with the output data is
  From the figure we see that the temperature has positive relation with the occurrence of wildfire i.e. as the
  temperature increases the probability of the wildfire occurrence is high. And precipitation has a negative
  relation - the lower the precipitation value in the region, the higher the probability of wildfire occurrence.
+
+#### Correlation Matrix
+
+<table>
+<tr>
+<td>Positive-negative data ration</td>
+<td>Correlation Matrix</td>
+</tr>
+<tr>
+<td>1:1</td>
+<td><img src="model_visualization/knn_classifier/1/correlation_matrix.png"  /></td>
+</tr>
+<tr>
+<td>1:2</td>
+<td><img src="model_visualization/knn_classifier/2/correlation_matrix.png"  /></td>
+</tr>
+<tr>
+<td>1:4</td>
+<td><img src="model_visualization/knn_classifier/4/correlation_matrix.png"  /></td>
+</tr>
+<tr>
+<td>1:8</td>
+<td><img src="model_visualization/knn_classifier/8/correlation_matrix.png"  /></td>
+</tr>
+<tr>
+<td>1:16</td>
+<td><img src="model_visualization/knn_classifier/16/correlation_matrix.png"  /></td>
+</tr>
+<tr>
+<td>1:32</td>
+<td><img src="model_visualization/knn_classifier/32/correlation_matrix.png"  /></td>
+</tr>
+<tr>
+<td>1:300</td>
+<td><img src="model_visualization/knn_classifier/300/correlation_matrix.png"  /></td>
+</tr>
+</table>
 
 ### Classification models
 We have four classification models to identify the occurrence of wildfire given the weather details - temperatures(max,

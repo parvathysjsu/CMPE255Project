@@ -129,8 +129,8 @@ The number means the ratio of positive data to negative data is 1 to that number
 The negative data are added by randomly choosing other days that do not have wildfire for each positive data. For example, if a wildfire happened at latitude -121.33 and longitude 46.1, then our final data set would randomly add another day's weather information from that location. The negative ratio determines how many random weather data was added for each wildfire occurrence.
 
 <p float="left">
-  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info0.png" width="200" />
-  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info1.png" width="200" /> 
+  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info0.png" width="350" />
+  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info1.png" width="350" /> 
 </p>
 
 The left graph above represents one of the positive data. The right graph represents the added negative data, which is randomly chosen.
@@ -209,6 +209,31 @@ model to classify the occurrence of wildfire.
 Salman Mal
 
 #### 3. SVM
+
+After removing unnecessary columns like start, end, acres and shape area, there are still 7 attributes left. 
+The remaining attributes are max_temperature, min_temperature, avg_temperature, departure temperature, hdd, cdd, precipitation.
+
+The default SVM model is running on the kernel "rbf". Different ratios of the dataset are applied to the default model. 
+The result shows a reasonable accuracy, ROC, and F1 score when the negative ratio is low. However, as more negative data added, the F1 score decrease fast.
+The default SVM model even reaches an F1 score = 0 when the ratio of pos to neg is 300. 
+
+<img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/attribute_comparison.png" width=400 height=300/>
+
+Notice that by adding more negative data, the dataset would become more unbalanced. 
+In wildfire detection, it is more important to correctly label an occurrence as wildfire, as opposed to labeling the non-wildfire one. 
+Thus, it is better to pick a classifier that has a decentF1 score. In order to solve the decreasing F1 score, three attributes are eliminated.
+The training result shows that using four attributes receive a better F1 score than using all the seven attributes.
+
+Later then, using only four attributes, multiple SVM kernels such as 'rbf', 'linear', and 'sigmoid' are trained and compared with each other.
+
+<img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/svm_model.png" width=400 height=300/>
+
+As the graph above shown, the accuracy increases as more negative data was added.
+Conversely, the F1 score decreases as more negative data were added.
+Overall the rbf kernel reaches the best performance in the SVM model with high accuracy and a decent F1-Score.
+Notice that linear kernel also achieves a decent F1 score. It can be interpreted that the dataset that we used does not have a high dimension.
+
+
 
 #### 4. Decision Trees
 

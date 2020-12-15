@@ -73,10 +73,17 @@ the input features - max_temperature and precipitation - with the output data is
 
 ### Classification models
 We have four classification models to identify the occurrence of wildfire given the weather details - temperatures(max,
-avg, min, hdd, cdd) and precipitation - of the region.
+avg, min, hdd, cdd) and precipitation - of the region. The following are the models used - 
+
 1. Logistic regression  
 Identifying the occurrence of wildfire is a binary classification problem which can be trained using a 
-simple logistic regression model. 
+simple logistic regression model. The below experiments were performed to improve the performance of the model
+1. Initially, the input data was trained using sklearn LogisticRegression().
+2. The input data was normalized to scale before being fed into the model. This helped in removing anomalies and 
+grouping the similar data together.
+3. GridSearchCV - The hyperparameters of the model namely - C, scaler and penalty were experimented with different
+variation to find the optimal values. The best results were obtained using C=10, scaler='liblinear' and penalty='l2'.   
+The results of the above experiments are recorded in the table below  
 <table>
   <tr>
     <td>Experiments</td>
@@ -95,6 +102,13 @@ simple logistic regression model.
     <td>77.62</td>
   </tr>
  </table>
+The t-SNE plot of the dataset is shown below.
+
+<img src="model_visualization/logistic_regression/tsne.png" />
+
+From the t-SNE plot, we observe that the data is not easily separable. Therefore, we need a more sophisticated
+model to classify the occurrence of wildfire.
+
 
 2. KNN
 
@@ -111,7 +125,44 @@ Dataset Data Ratio | Accuracy | Confusion Matrix
 1:16 | 97.75% | <img src="model_visualization/decision_tree/confusion_matrix_16.png" />
 1:32 | 98.75% | <img src="model_visualization/decision_tree/confusion_matrix_32.png" />
 1:300 | 99.89% | <img src="model_visualization/decision_tree/confusion_matrix_300.png" />
+
 ## Comparisons
+Below are the consolidated performance of different models.
+<table>
+  <tr>
+    <td>Classification models</td>
+    <td>Accuracy (%)</td>
+    <td>F1-score</td>
+  </tr>
+  <tr>
+    <td>Linear regression</td>
+    <td>77.62</td>
+    <td>0.75</td>
+  </tr>
+  <tr>
+    <td>KNN</td>
+    <td>75.12</td>
+    <td>77.62</td>
+  </tr>
+  <tr>
+    <td>SVM</td>
+    <td>77.62</td>
+    <td>77.62</td>
+  </tr>
+  <tr>
+    <td>Decision tree</td>
+    <td>77.62</td>
+    <td>77.62</td>
+  </tr>
+ </table>
 
 ## Conclusion
+From the above experiments, Decision Tree best identifies the occurrence of
+wildfire with accuracy of …….. And F1 score of ………
+
+## Future Recommendations
+There is scope for improving the performance of classification model with the help of - 
+1. Availability of more wildfire data - This can promote the use of complex deep learning model to achieve exemplary
+performance
+2. Addition of input weather features, so to achieve a more separable cluster. 
 

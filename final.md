@@ -78,37 +78,37 @@ avg, min, hdd, cdd) and precipitation - of the region. The following are the mod
 #### 1. Logistic regression  
 Identifying the occurrence of wildfire is a binary classification problem which can be trained using a 
 simple logistic regression model. The below experiments were performed to improve the performance of the model
-1. Initially, the input data was trained using sklearn LogisticRegression().
-2. The input data was normalized to scale before being fed into the model. This helped in removing anomalies and 
+    - Initially, the input data was trained using sklearn LogisticRegression().
+    - The input data was normalized to scale before being fed into the model. This helped in removing anomalies and 
 grouping the similar data together.
-3. GridSearchCV - The hyperparameters of the model namely - C, scaler and penalty were experimented with different
-variation to find the optimal values. The best results were obtained using C=10, scaler='liblinear' and penalty='l2'.   
-The results of the above experiments are recorded in the table below  
-<table>
-  <tr>
-    <td>Experiments</td>
-    <td>Accuracy (%)</td>
-  </tr>
-  <tr>
-    <td>Initial model</td>
-    <td>70.00</td>
-  </tr>
-  <tr>
-    <td>Normalizing input data</td>
-    <td>75.12</td>
-  </tr>
-  <tr>
-    <td>Hyperparameter search</td>
-    <td>77.62</td>
-  </tr>
- </table>
-The t-SNE plot of the dataset is shown below.
+    - GridSearchCV - The hyperparameters of the model namely - C, scaler and penalty were experimented with different
+variation to find the optimal values. The best results were obtained using C=10, scaler='liblinear' and penalty='l2'. 
+     
+    The results of the above experiments are recorded in the table below  
+    <table>
+      <tr>
+        <td>Experiments</td>
+        <td>Accuracy (%)</td>
+      </tr>
+      <tr>
+        <td>Initial model</td>
+        <td>70.00</td>
+      </tr>
+      <tr>
+        <td>Normalizing input data</td>
+        <td>75.12</td>
+      </tr>
+      <tr>
+        <td>Hyperparameter search</td>
+        <td>77.62</td>
+      </tr>
+     </table>
+    The t-SNE plot of the dataset is shown below.
 
-<img src="model_visualization/logistic_regression/tsne.png" />
+    <img src="model_visualization/logistic_regression/tsne.png" />
 
-From the t-SNE plot, we observe that the data is not easily separable. Therefore, we need a more sophisticated
-model to classify the occurrence of wildfire.
-
+    From the t-SNE plot, we observe that the data is not easily separable. Therefore, we need a more sophisticated
+    model to classify the occurrence of wildfire.
 
 #### 2. KNN
 

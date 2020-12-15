@@ -84,10 +84,54 @@ On comparing both of the following graphs, we can clearly see the positive relat
  
 
 ### Merging the wildfire and temperature dataset
-#### Steven
+#### Merged dataset  
+In our wildfire dataset, there is no weather information such as temperature, humidity, and precipitation. Thus, we need to merge the weather dataset and the wildfire dataset.
+
+The two datasets would be merged based on the location of the time and the range of the wildfire date. Additional cleaning in the weather dataset and forest dataset is required. The goal is to add new attributes such as max_temperature, min_temperature, average_temperature, average_precipitation, average_humid_degree, average_cooling_degreeday into the wildfire dataset.
+
+Additional cleaning in Weather Dataset involved:
+* Remove rows with 'M' values in max_temperature, min_temperature, avg_temperature	departure_temperature, hdd, cdd, and percipitation columns.
+* Remove non-numeric value in the numeric attribute field.
+* Add latitude coordinates and longitude coordinates for each station.
+* Update the date attribute to the format of Python Time Object for better comparison.
+
+The following pictures show examples of weather dataset.
+
+<img src="graphs/weather_example1.png" />
+<img src="graphs/weather_example2.png" />
+
+Additional cleaning in Wildfire Dataset involved:
+* Add Attribute "Centroid," which is calculated based on the geometry polygon given by the geojson file.
+* Add Attribute "nearest Station." Euclidean distance is used to calculate the nearest weather station where the wildfire happens. This attribute contains the longitude and latitude coordinate of the station.
+* Update the date attribute to the format of Python Time Object for better comparison.
+
+The following picture shows the added attribute.
+
+<img src="graphs/wild_fire_example.png" />
+
+Steps of merging the two dataset
+* First, additional cleaning would be performed on the two datasets.
+* Second, each wildfire record would map to rows of weather data based on the nearest station. The rows of weather data would be the range of the date that the wildfire is happening.
+* Finally, the average value of the weather data would be calculated and add to the wildfire dataset.
+
+The following pictures show the merge dataset.
+
+<img src="graphs/merge_data_example1.png" />
+<img src="graphs/merge_data_example2.png" />
 
 ### Adding negative data
-#### Data Ratios(Steven)
+Since we only have the dataset that has the wildfire occurs, we need to add some negative data (weather data that does not has wildfire occur) into our dataset for training.
+
+For experiment purposes, we are not sure how many negative data need to be added. Thus, we add a different ratio of negative data into our final dataset. 
+In the folder data/preprocessed, many datasets start with a number such as 1.csv, 2.csv, 4.csv, 8.csv, 16.csv, 32.csv, 64.csv.
+The number means the ratio of positive data to negative data is 1 to that number. For example, 4.csv implies that the rate of positive data and the negative dataset is 1 to 4.
+
+The negative data are added by randomly choosing other days that do not have wildfire for each positive data. For example, if a wildfire happened at latitude -122.33 and longitude 56.1, then our final data set would randomly add another day's weather information from that location. The negative ratio determines how many random weather data was added for each wildfire occurrence.
+
+<p float="left">
+  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info0.png" width="100" />
+  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info1.png" width="100" /> 
+</p>
 
 ### Analysis of merged data
 #### Salman Mal (Correlation Matrix)

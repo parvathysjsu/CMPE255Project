@@ -51,7 +51,7 @@ Analysing the wildfire dataset we observed that -   <br>
   </tr>
   <tr>
     <td><img src="graphs/wildfire_year_wise_chart.png"></td>
-    <td><img src="graphs/wildfire_causes_chart.png" width=600 height=200></td>
+    <td><img src="graphs/wildfire_causes_chart.png" width=700 height=300></td>
   </tr>
  </table>
 2. From the figure below we observe that major known cause of wildfires in the Washington state is mostly Lightening. This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 

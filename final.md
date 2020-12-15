@@ -271,13 +271,13 @@ Below are the consolidated performance of different models.
   </tr>
   <tr>
     <td>KNN</td>
-    <td>75.12</td>
-    <td>77.62</td>
+    <td>96.00</td>
+    <td>0.48</td>
   </tr>
   <tr>
     <td>SVM</td>
-    <td>77.62</td>
-    <td>77.62</td>
+    <td>71.86</td>
+    <td>0.96</td>
   </tr>
   <tr>
     <td>Decision tree</td>

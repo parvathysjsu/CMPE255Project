@@ -140,6 +140,11 @@ def make_confusion_matrix(cf, categories,
         plt.title(title)
 
 def make_correlation_matrix(dataset,data_set_name):
+    """
+    saves correlation matrix as a graph
+    :param dataset: pass dataset
+    :param data_set_name: to save in corresponding directory
+    """
     # Identify features Columns
     feature_columns=["max_temperature","min_temperature","avg_temperature","departure_temperature","hdd","cdd","percipitation"]
     plt.clf()
@@ -150,10 +155,21 @@ def make_correlation_matrix(dataset,data_set_name):
 
 
 def save_model(clf,weight,model_name,):
+    """
+    saves trained model for later reloading it
+    :param clf: classifier
+    :param weight: to save in corresponding directory
+    :param model_name: to save in corresponding directory
+    """
     print(f"Saving model {model_name}")
     dump(clf, '{}{}/{}/trained_model.joblib'.format(graph_dir,model_name,weight))
 
 def calculate_metrics(Y_test,predicted_y):
+    """
+    Calculates classification matrix like F1 Score, ROC AUC Score, and Accuracy
+    :param Y_test: actual value
+    :param predicted_y: predicted value
+    """
     print("Calculating metrics...")
     new_dict={}
     new_dict["classification_report"]=classification_report(Y_test,predicted_y)

@@ -22,7 +22,7 @@ is essential to adopt measures to tackle this situation. Early detection or pred
 can promote early response, thereby minimizing the adversities caused by the fire. Through this project, we propose
 a model to identify the occurrence of wildfire given the temperature and precipitation details of the region. Four
 different models are used namely - Logistic regression, KNN, SVM and Decision tree. From the experiments we have
-identified that the Decision tree model performed the best with an accuracy of 00.00% and F1-score of 00.00%.  
+identified that the Decision tree model performed the best with an accuracy of 94.07% and F1 score of 0.86 
 
 
 ## Experiments/Analysis
@@ -75,7 +75,7 @@ the input features - max_temperature and precipitation - with the output data is
 We have four classification models to identify the occurrence of wildfire given the weather details - temperatures(max,
 avg, min, hdd, cdd) and precipitation - of the region. The following are the models used - 
 
-1. Logistic regression  
+#### 1. Logistic regression  
 Identifying the occurrence of wildfire is a binary classification problem which can be trained using a 
 simple logistic regression model. The below experiments were performed to improve the performance of the model
 1. Initially, the input data was trained using sklearn LogisticRegression().
@@ -110,21 +110,21 @@ From the t-SNE plot, we observe that the data is not easily separable. Therefore
 model to classify the occurrence of wildfire.
 
 
-2. KNN
+#### 2. KNN
 
-3. SVM
+#### 3. SVM
 
-4. Decision Trees
+#### 4. Decision Trees
 
 Dataset Data Ratio | Accuracy | Confusion Matrix
 ------------ | ------------- | -------------
-1:1 | 88.1% | <img src="model_visualization/decision_tree/confusion_matrix.png" />
-1:2 | 92.04% | <img src="model_visualization/decision_tree/confusion_matrix_2.png" />
-1:4 | 94.07% | <img src="model_visualization/decision_tree/confusion_matrix_4.png" />
-1:8 | 95.22% | <img src="model_visualization/decision_tree/confusion_matrix_8.png" />
-1:16 | 97.75% | <img src="model_visualization/decision_tree/confusion_matrix_16.png" />
-1:32 | 98.75% | <img src="model_visualization/decision_tree/confusion_matrix_32.png" />
-1:300 | 99.89% | <img src="model_visualization/decision_tree/confusion_matrix_300.png" />
+1:1 | 88.1% | 
+1:2 | 92.04% |
+1:4 | 94.07% |
+1:8 | 95.22% |
+1:16 | 97.75% |
+1:32 | 98.75% |
+1:300 | 99.89% |
 
 ## Comparisons
 Below are the consolidated performance of different models.

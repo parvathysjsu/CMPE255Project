@@ -156,6 +156,7 @@ the input features - max_temperature and precipitation - with the output data is
 
 #### Correlation Matrix
 
+This shows correlations between the stated importance of various things to people. The line of 1.00s going from the top left to the bottom right is the main diagonal, which shows that each variable always perfectly correlates with itself. This matrix is symmetrical, with the same correlation is shown above the main diagonal being a mirror image of those below the main diagonal. Correlation matrix changes with the proportion of negative data in the dataset. 
 <table>
 <tr>
 <td>Positive-negative data ration</td>

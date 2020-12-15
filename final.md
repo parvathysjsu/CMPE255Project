@@ -40,12 +40,21 @@ used to identifying the city and county details of the corresponding wildfire.
 3. Finally, the spreadsheet contents are mapped with its corresponding city and county values from the shapefile using
 the common feature firename.
 
-### Analysis/visualization of wildfire dataset
+### Analysis and visualization of wildfire dataset
 Analysing the wildfire dataset we observed that -   <br>
 1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019 as shown in the graph below. The maximum number was recorded in 2015 with over 70 wildfires.
-<img src="graphs/wildfire_year_wise_chart.png" />
+
+<table>
+  <tr>
+    <td>Wildfires over the years</td>
+    <td>Causes of wildfires</td>
+  </tr>
+  <tr>
+    <td><img src="graphs/wildfire_year_wise_chart.png"></td>
+    <td><img src="graphs/wildfire_causes_chart.png" width=600 height=200></td>
+  </tr>
+ </table>
 2. From the figure below we observe that major known cause of wildfires in the Washington state is mostly Lightening. This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 
-<img src="graphs/wildfire_causes_chart.png" >
 3. Chelan county tops the list of wildfires per county with over 100 fires. Its followed by Okanogan county, Spokane county, and Klickitat county all having over 50 fires.
 4. The figure shows a map of Washington state with all the areas that had wildfires. This map is constructed using the shape file that had coordinates for the locations.
 <img src="graphs/wildfires_map.PNG"  />

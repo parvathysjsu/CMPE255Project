@@ -126,21 +126,27 @@ def merge_fire_shape(fire_data, shapefile):
 
 
 def main():
+    # load spreadsheet data
     fire_data = load_data(os.path.join(DATA_DIR, 'Washington_Large_Fires_1973-2019.csv'))
+    # preprocess spreadsheet data
     remove_unnecessary_cols(fire_data, ['OBJECTID', 'SHAPEAREA',
                                         'SHAPELEN', 'FIRENUM',
                                         'PERIMDATE', 'YEAR'])
     fire_data['STARTDATE'] = convert_to_date(fire_data['STARTDATE'])
     combine_redundant(fire_data['CAUSE'])
 
+    # load shapefile
     shapefile = load_shapefile(os.path.join(DATA_DIR, 'wa_lrg_fires.shp'))
+    # preprocess shapefile
     shapefile = convert_crs(shapefile, 4326)
     shapefile['AREA'], shapefile['COUNTY'] = add_county(shapefile.geometry)
     remove_unnecessary_cols(shapefile, ['SHAPE_AREA',
                                         'SHAPE_LEN', 'FIRENUM',
                                         'PERIMDATE', 'YEAR'])
+    # store shapefile
     shapefile.to_csv(os.path.join(DATA_DIR, 'preprocessed/shapefile.csv'), index=False)
 
+    # merge shapefile and spreadsheet
     fire_data['AREA'] = ''
     fire_data['COUNTY'] = ''
     fire_data = merge_fire_shape(fire_data, shapefile)

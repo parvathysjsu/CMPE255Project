@@ -9,6 +9,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
+from sklearn.preprocessing import PolynomialFeatures
 from preprocessing.wildfire_preprocessing import remove_unnecessary_cols
 from models.knn_classifier import calculate_metrics
 
@@ -153,8 +154,12 @@ def main():
     # input data
     X = data.iloc[:, 8:-1]
     X = preprocess_input(X)
+    # Normalizing input
     sc = StandardScaler()
     X = sc.fit_transform(X)
+    # Polynomial feature transform
+    poly = PolynomialFeatures(degree=2)
+    X = poly.fit_transform(X)
     # output data
     y = data.iloc[:, -1]
 

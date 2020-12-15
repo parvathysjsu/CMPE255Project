@@ -126,12 +126,14 @@ For experiment purposes, we are not sure how many negative data need to be added
 In the folder data/preprocessed, many datasets start with a number such as 1.csv, 2.csv, 4.csv, 8.csv, 16.csv, 32.csv, 64.csv.
 The number means the ratio of positive data to negative data is 1 to that number. For example, 4.csv implies that the rate of positive data and the negative dataset is 1 to 4.
 
-The negative data are added by randomly choosing other days that do not have wildfire for each positive data. For example, if a wildfire happened at latitude -122.33 and longitude 56.1, then our final data set would randomly add another day's weather information from that location. The negative ratio determines how many random weather data was added for each wildfire occurrence.
+The negative data are added by randomly choosing other days that do not have wildfire for each positive data. For example, if a wildfire happened at latitude -121.33 and longitude 46.1, then our final data set would randomly add another day's weather information from that location. The negative ratio determines how many random weather data was added for each wildfire occurrence.
 
 <p float="left">
-  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info0.png" width="100" />
-  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info1.png" width="100" /> 
+  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info0.png" width="200" />
+  <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info1.png" width="200" /> 
 </p>
+
+The left graph above represents one of the positive data. The right graph represents the added negative data, which is randomly chosen.
 
 ### Analysis of merged data
 #### Salman Mal (Correlation Matrix)

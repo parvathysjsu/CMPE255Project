@@ -128,6 +128,10 @@ The results of the above experiments are recorded in the table below
      <td>84.29</td>
   </tr>
 </table>
+The confusion matrix of the final model is given by - 
+
+<img src="model_visualization/logistic_regression/confusion_matrix.png" />
+
 The t-SNE plot of the dataset is shown below.
 
 <img src="model_visualization/logistic_regression/tsne.png" />

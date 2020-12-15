@@ -205,8 +205,19 @@ The t-SNE plot of the dataset is shown below.
 From the t-SNE plot, we observe that the data is not easily separable. Therefore, we need a more sophisticated
 model to classify the occurrence of wildfire.
 
-#### 2. KNN
-Salman Mal
+#### 2. K Nearest Neighbor (KNN)
+In KNN classification, the output is a class membership. An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). 
+
+Trained model for all ratio dataset for weight(hyper parameter) value uniform and distance. In  distance weight, algorithm assign weights to the contributions of the neighbors, so that the nearer neighbors contribute more to the average than the more distant ones. For example, a common weighting scheme consists in giving each neighbor a weight of 1/d, where d is the distance to the neighbor. In uniform weights, all nearest object contributes same to the classification. As the negative data ratio is increased the accuracy is increasing and f1 score and auc score are inversely affected. Below are metrics for each iteration.
+- Red are the lowest in the column
+- Greens are the max in the column
+- Yellow highlights the optimal model with tradeoff between accuracy and f1 score.
+<img src="model_visualization/knn_classifier/metrics_comparison.png"  alt="KNN metrics Comparison"/>
+
+- Confusion matrix for optimal model
+<img src="model_visualization/knn_classifier/4/distance_weight/confusion_matrix.png">
+
+Distance weighted classification is performing well over the uniform weighted classification. Though accuracy is good, False Positive rate is higher and that is negatively affects the precision. 
 
 #### 3. SVM
 

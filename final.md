@@ -44,9 +44,13 @@ the common feature firename.
 
 ### Scraping, preprocessing and analysis of temperature dataset
 #### Salman Mal
+
 ### Merging the wildfire and temperature dataset
 #### Steven
+
+### Adding negative data
 #### Data Ratios(Steven)
+
 ### Analysis of merged data
 #### Salman Mal (Correlation Matrix)
 The objective of the classification model is to predict the occurrence of wildfire given the weather details of
@@ -66,15 +70,37 @@ the input features - max_temperature and precipitation - with the output data is
  From the figure we see that the temperature has positive relation with the occurrence of wildfire i.e. as the
  temperature increases the probability of the wildfire occurrence is high. And precipitation has a negative
  relation - the lower the precipitation value in the region, the higher the probability of wildfire occurrence.
-## Classification Models
 
-### Logistic Regression
+### Classification models
+We have four classification models to identify the occurrence of wildfire given the weather details - temperatures(max,
+avg, min, hdd, cdd) and precipitation - of the region.
+1. Logistic regression  
+Identifying the occurrence of wildfire is a binary classification problem which can be trained using a 
+simple logistic regression model. 
+<table>
+  <tr>
+    <td>Experiments</td>
+    <td>Accuracy (%)</td>
+  </tr>
+  <tr>
+    <td>Initial model</td>
+    <td>70.00</td>
+  </tr>
+  <tr>
+    <td>Normalizing input data</td>
+    <td>75.12</td>
+  </tr>
+  <tr>
+    <td>Hyperparameter search</td>
+    <td>77.62</td>
+  </tr>
+ </table>
 
-### KNN Classifier
+2. KNN
 
-### SVM 
+3. SVM
 
-### Decision Trees
+4. Decision Trees
 
 Dataset Data Ratio | Accuracy | Confusion Matrix
 ------------ | ------------- | -------------
@@ -86,5 +112,6 @@ Dataset Data Ratio | Accuracy | Confusion Matrix
 1:32 | 98.75% | <img src="model_visualization/decision_tree/confusion_matrix_32.png" />
 1:300 | 99.89% | <img src="model_visualization/decision_tree/confusion_matrix_300.png" />
 ## Comparisons
+
 ## Conclusion
 

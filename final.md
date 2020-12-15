@@ -217,7 +217,7 @@ The default SVM model is running on the kernel "rbf". Different ratios of the da
 The result shows a reasonable accuracy, ROC, and F1 score when the negative ratio is low. However, as more negative data added, the F1 score decrease fast.
 The default SVM model even reaches an F1 score = 0 when the ratio of pos to neg is 300. 
 
-<img src="graphs/attribute_comparison.png"/>
+<img src="graphs/attribute_comparison.png"width=700 height=500/>
 
 Notice that by adding more negative data, the dataset would become more unbalanced. 
 In wildfire detection, it is more important to correctly label an occurrence as wildfire, as opposed to labeling the non-wildfire one. 
@@ -226,7 +226,7 @@ The training result shows that using four attributes receive a better F1 score t
 
 Later then, using only four attributes, multiple SVM kernels such as 'rbf', 'linear', and 'sigmoid' are trained and compared with each other.
 
-<img src="graphs/svm_model.png" />
+<img src="graphs/svm_model.png"  width=700 height=500/>
 
 As the graph above shown, the accuracy increases as more negative data was added.
 Conversely, the F1 score decreases as more negative data were added.

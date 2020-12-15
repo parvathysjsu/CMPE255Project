@@ -50,7 +50,7 @@ The model output can be visualized in model_visualization/logistic_regression
 ### KNN Classifier
 [knn_classifier.py](./models/knn_classifier.py) runs the K nearest neighbor implementation of SKlearn library for multiple dataset with different positive and negative data ratio and saves the confusion matrix and other graphs in [./model_visualization/knn_classifier](./model_visualization/knn_classifier) directory.
 ```
-# on mac run the following command to navigate to [models/](./models) directory
+# on mac run the following command to navigate to ./models directory
 
 cd models
 
@@ -59,5 +59,5 @@ cd models
 python knn_classifier.py
 
 
-# running python models/knn_classifier.py could throw path not found excepting
+# running python models/knn_classifier.py could throw path not found exception
 ```

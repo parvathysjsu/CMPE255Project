@@ -79,7 +79,7 @@ python knn_classifier.py
 ```
 
 ### Decision Tree
-[decision_tree.py](./models/decision_tree.py) runs the Decision Tree implementation of SKlearn library for datasets with different positive and negative data ratios and saves the confusion matrix and other graphs in [./model_visualization/decision_tree](./model_visualization/decision_tree) directory.
+[decision_tree.ipynb](./models/decision_tree.ipynb) runs the Decision Tree implementation of SKlearn library for datasets with different positive and negative data ratios and saves the confusion matrix and other graphs in [./model_visualization/decision_tree](./model_visualization/decision_tree) directory.
 
 ```
 # Use anaconda to open .ipynb files

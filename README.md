@@ -61,3 +61,13 @@ python knn_classifier.py
 
 # running python models/knn_classifier.py could throw path not found exception
 ```
+
+### SVM Classifier
+[svm.ipynb](./models/svm.ipynb) runs the C-Support Vector Classification of SKlearn library for multiple dataset with different positive and negative data ratio and saves the confusion matrix.
+
+```
+# Use anaconda to open .ipnb files
+
+# All of the running result are saved in the jupyter notebook
+# To rerun all of the result, simply click Run All in the jupyter notebook
+```

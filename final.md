@@ -20,7 +20,9 @@ human habitat, and adversely influence climatic changes. A NICC report states th
 on average, around 2500 homes are destroyed or impacted every year due to wildfires. Therefore, it
 is essential to adopt measures to tackle this situation. Early detection or prediction
 can promote early response, thereby minimizing the adversities caused by the fire. Through this project, we propose
-a model to predict the occurrence of wildfire given the temperature and precipitation details of the region. 
+a model to identify the occurrence of wildfire given the temperature and precipitation details of the region. Four
+different models are used namely - Logistic regression, KNN, SVM and Decision tree. From the experiments we have
+identified that the Decision tree model performed the best with an accuracy of 00.00% and F1-score of 00.00%.  
 
 
 ## Experiments/Analysis

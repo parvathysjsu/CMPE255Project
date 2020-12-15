@@ -164,7 +164,7 @@ def main():
     y = data.iloc[:, -1]
 
     # TSNE
-    print('Plotting TSNE...')
+    print('Plotting t-SNE...')
     tsne = TSNE(perplexity=30)
     tsne_results = tsne.fit_transform(X)
     data['tsne_one'] = tsne_results[:, 0]
@@ -216,7 +216,9 @@ def main():
     t -= 0.5  # Subtract 0.5 from the top
     plt.ylim(b, t)  # update the ylim(bottom, top) values
     plt.savefig('../model_visualization/logistic_regression/confusion_matrix.png', bbox_inches='tight')
+    print('[INFO] Visualizations stored in model_visualization/logistic_regression folder')
 
 
 if __name__ == '__main__':
     main()
+    print('DONE!')

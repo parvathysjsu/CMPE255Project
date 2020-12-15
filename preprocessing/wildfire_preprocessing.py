@@ -127,8 +127,10 @@ def merge_fire_shape(fire_data, shapefile):
 
 def main():
     # load spreadsheet data
+    print('Loading spreadsheet data...')
     fire_data = load_data(os.path.join(DATA_DIR, 'Washington_Large_Fires_1973-2019.csv'))
     # preprocess spreadsheet data
+    print('Preprocessing spreadsheet data...')
     remove_unnecessary_cols(fire_data, ['OBJECTID', 'SHAPEAREA',
                                         'SHAPELEN', 'FIRENUM',
                                         'PERIMDATE', 'YEAR'])
@@ -136,8 +138,10 @@ def main():
     combine_redundant(fire_data['CAUSE'])
 
     # load shapefile
+    print('Loading shapefile...')
     shapefile = load_shapefile(os.path.join(DATA_DIR, 'wa_lrg_fires.shp'))
     # preprocess shapefile
+    print('Preprocessing shapefile...')
     shapefile = convert_crs(shapefile, 4326)
     shapefile['AREA'], shapefile['COUNTY'] = add_county(shapefile.geometry)
     remove_unnecessary_cols(shapefile, ['SHAPE_AREA',
@@ -151,8 +155,10 @@ def main():
     fire_data['COUNTY'] = ''
     fire_data = merge_fire_shape(fire_data, shapefile)
     fire_data.to_csv(os.path.join(DATA_DIR, 'preprocessed/wildfire.csv'), index=False)
+    print('[INFO] Processed wildfire data stored in data/preprocessed/wildfire.csv')
 
 
 if __name__ == '__main__':
     DATA_DIR = os.path.join(os.path.dirname(__file__), '../data/')
     main()
+    print('DONE!')

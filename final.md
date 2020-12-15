@@ -41,6 +41,15 @@ used to identifying the city and county details of the corresponding wildfire.
 the common feature firename.
 
 ### Analysis/visualization of wildfire dataset
+Analysing the wildfire dataset we observed that -   <br>
+1. There is an increasing trend in the occurrence of wildfires over the years from 1973 to 2019 as shown in the graph below. The maximum number was recorded in 2015 with over 70 wildfires.
+<img src="graphs/wildfire_year_wise_chart.png" />
+2. From the figure below we observe that major known cause of wildfires in the Washington state is mostly Lightening. This has accounted for almost 200 fires in the region. The other major causes of fire are human induced and arson. 
+<img src="graphs/wildfire_causes_chart.png" >
+3. Chelan county tops the list of wildfires per county with over 100 fires. Its followed by Okanogan county, Spokane county, and Klickitat county all having over 50 fires.
+4. The figure shows a map of Washington state with all the areas that had wildfires. This map is constructed using the shape file that had coordinates for the locations.
+<img src="graphs/wildfires_map.PNG"  />
+
 
 ### Scraping, preprocessing and analysis of temperature dataset
 #### Salman Mal
@@ -116,15 +125,24 @@ variation to find the optimal values. The best results were obtained using C=10,
 
 #### 4. Decision Trees
 
-Dataset Data Ratio | Accuracy | Confusion Matrix
+Preprocessing of data was done to remove unnecessary columns like start and end dates, acres, shapearea etc. 
+The model analysis process started with data split into training and testing datasets with 8:2 ratio using sklearn.model_selection.train_test_split. The model used was sklearn.tree.DecisionTreeClassifier and it was trained using the training data. And the outcome was predicted for the test data and then compared with the expected result. This process was repeated multiple times once for each dataset of varying positive and negative data ratios. The results of those different datasets is given below.
+
+Dataset Data Ratio | Accuracy | F1 Score
 ------------ | ------------- | -------------
-1:1 | 88.1% | 
-1:2 | 92.04% |
-1:4 | 94.07% |
-1:8 | 95.22% |
-1:16 | 97.75% |
-1:32 | 98.75% |
-1:300 | 99.89% |
+1:1 | 88.1% | 0.89
+1:2 | 92.04% | 0.88
+1:4 | 94.07% | 0.86
+1:8 | 95.22% | 0.78
+1:16 | 97.75% | 0.79
+1:32 | 98.75% | 0.81
+1:300 | 99.89% | 0.79
+
+An accuracy of over 99% was achieved with 1:300 ratio dataset, but it had lower F1 score and more false positives. The 1:1 ratio dataset had the lowest accuracy of 88%, but the fewest false positives and highest F1 score. As the count of negative data increased, accuracy increased, but number of false positives also increased and F1 score decreased. On an average, the dataset with best combination of accuracy and F1 score is selected as the 1:4 ratio dataset. The confusion matrix is shown below.
+
+<img src="model_visualization/decision_tree/confusion_matrix_4.png" >
+<br>The decision tree of the 1:4 ratio dataset is plotted below using sklearn.tree.plot_tree function.
+<img src="model_visualization/decision_tree/decistion_tree_4.png" >
 
 ## Comparisons
 Below are the consolidated performance of different models.
@@ -132,7 +150,7 @@ Below are the consolidated performance of different models.
   <tr>
     <td>Classification models</td>
     <td>Accuracy (%)</td>
-    <td>F1-score</td>
+    <td>F1-Score</td>
   </tr>
   <tr>
     <td>Linear regression</td>
@@ -151,14 +169,14 @@ Below are the consolidated performance of different models.
   </tr>
   <tr>
     <td>Decision tree</td>
-    <td>77.62</td>
-    <td>77.62</td>
+    <td>94.07</td>
+    <td>0.86</td>
   </tr>
  </table>
 
 ## Conclusion
 From the above experiments, Decision Tree best identifies the occurrence of
-wildfire with accuracy of …….. And F1 score of ………
+wildfire with accuracy of 94.07% and F1 score of 0.86 
 
 ## Future Recommendations
 There is scope for improving the performance of classification model with the help of - 

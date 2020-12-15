@@ -133,7 +133,7 @@ The negative data are added by randomly choosing other days that do not have wil
   <img src="https://github.com/parvathysjsu/CMPE255Project/blob/main/graphs/weather_info1.png" width="350" /> 
 </p>
 
-The left graph above represents one of the positive data. The right graph represents the added negative data, which is randomly chosen.
+The left graph above represents one of the positive data. The right graph represents the added negative data, which is a randomly chosen day from the weather dataset with the same lattitude and longtitude information.
 
 ### Analysis of merged data
 #### Salman Mal (Correlation Matrix)

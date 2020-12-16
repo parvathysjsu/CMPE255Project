@@ -46,6 +46,7 @@ python ./preprocessing/weather_dataset_visualization.py
 ```
 
 ### Merge wildfire and temperature data
+[Combine_two_data.ipynb](./mergeingData/Combine_two_data.ipynb) merge the wildfire and temperature dataset
 ```
 # run the notebook file in mergeingData/Combine_two_data.ipynb
 ```

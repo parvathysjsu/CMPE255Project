@@ -38,11 +38,16 @@ code in the project directory
  ```   
     
     
-### Merge wildfire and temperature data
+### Visualization Code
 [weather_dataset_visualization.py](./preprocessing/weather_dataset_visualization.py) runs the analysis on temperature dataset and saves the relevant graph in the [graphs](./graphs) directory.
 ```
 # on mac run the following command from the git repo's root directory 
 python ./preprocessing/weather_dataset_visualization.py
+```
+
+### Merge wildfire and temperature data
+```
+# run the notebook file in mergeingData/Combine_two_data.ipynb
 ```
 
 ## Models
